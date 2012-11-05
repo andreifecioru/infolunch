@@ -1,9 +1,9 @@
 #import <GHUnitIOS/GHUnit.h>
 
-@interface TestTemplate : GHTestCase
+@interface AsyncTestTemplate : GHAsyncTestCase
 @end
 
-@implementation TestTemplate
+@implementation AsyncTestTemplate
 
 // By default NO, but if you have a UI test or test
 // dependent on running on the main thread return YES
@@ -33,7 +33,20 @@
 
 #pragma mark - Unit tests
 - (void)testMyFirstTestCase {
+    // we are starting an async. operation.
+    [self prepare];
+
+    // run the test on the test object
+    
+    // wait for the async. operation to complete.
+    [self waitForStatus:kGHUnitWaitStatusSuccess timeout:3.0];
+    
     GHAssertTrue(true, @"Test passed!.");
+}
+
+- (void)callbackTriggeredByObjectUnderTest {
+    // let the test know that the async. operation is complete.
+    [self notify:kGHUnitWaitStatusSuccess];
 }
 
 @end

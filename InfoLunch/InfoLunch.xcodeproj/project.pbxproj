@@ -64,7 +64,6 @@
 		C9634C4E16476ECB00DA400B /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9634C3716476ECB00DA400B /* SBJsonWriter.m */; };
 		C9634C4F16476ECB00DA400B /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9634C3716476ECB00DA400B /* SBJsonWriter.m */; };
 		C9B9171916465380001F155F /* Signal.m in Sources */ = {isa = PBXBuildFile; fileRef = 220B9168CE4DFA4A373A8AD9 /* Signal.m */; };
-		C9D1649D1647B2D4007AC9B4 /* TestOnlineToneGenerationFromURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 220B98ED945DE7341FD09927 /* TestOnlineToneGenerationFromURL.m */; };
 		C9D1649E1647B2D7007AC9B4 /* TestOfflineSilenceGeneration.m in Sources */ = {isa = PBXBuildFile; fileRef = 220B9160FE2CF6F9EC9C3107 /* TestOfflineSilenceGeneration.m */; };
 		C9D1649F1647B2DA007AC9B4 /* TestOfflineToneGeneration.m in Sources */ = {isa = PBXBuildFile; fileRef = 220B93367173190E0C89D8F5 /* TestOfflineToneGeneration.m */; };
 		C9D164A01647B2DD007AC9B4 /* TestOfflineFFTComputation.m in Sources */ = {isa = PBXBuildFile; fileRef = 220B9121D006B8285FB573C9 /* TestOfflineFFTComputation.m */; };
@@ -143,6 +142,7 @@
 		C9634C3516476ECB00DA400B /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonUTF8Stream.m; path = support/JsonParser/SBJsonUTF8Stream.m; sourceTree = "<group>"; };
 		C9634C3616476ECB00DA400B /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = support/JsonParser/SBJsonWriter.h; sourceTree = "<group>"; };
 		C9634C3716476ECB00DA400B /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = support/JsonParser/SBJsonWriter.m; sourceTree = "<group>"; };
+		C9DAC59116480CAA007C8D3E /* AsyncTestTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncTestTemplate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +282,7 @@
 				220B9613F7152CD3D66A18F0 /* online */,
 				220B90BD1E5DC098E79898B6 /* offline */,
 				220B9FD68AB4F7532BD4E2DA /* TestTemplate.m */,
+				C9DAC59116480CAA007C8D3E /* AsyncTestTemplate.m */,
 			);
 			path = InfoLunchTest;
 			sourceTree = "<group>";
@@ -367,6 +368,7 @@
 				C95DA1DD163EEB3A00D8C069 /* Sources */,
 				C95DA1DE163EEB3A00D8C069 /* Frameworks */,
 				C95DA1DF163EEB3A00D8C069 /* Resources */,
+				C9DAC594164810F0007C8D3E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -427,6 +429,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C9DAC594164810F0007C8D3E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh support/scripts/RunTests.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		220B9A61B8DE03B7F4D50B33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -474,7 +492,6 @@
 				C9634C4D16476ECB00DA400B /* SBJsonUTF8Stream.m in Sources */,
 				C9634C4F16476ECB00DA400B /* SBJsonWriter.m in Sources */,
 				220B9B9B09AA859EF4998A71 /* TestOfflineToneGenerationFromURL.m in Sources */,
-				C9D1649D1647B2D4007AC9B4 /* TestOnlineToneGenerationFromURL.m in Sources */,
 				C9D1649E1647B2D7007AC9B4 /* TestOfflineSilenceGeneration.m in Sources */,
 				C9D1649F1647B2DA007AC9B4 /* TestOfflineToneGeneration.m in Sources */,
 				C9D164A01647B2DD007AC9B4 /* TestOfflineFFTComputation.m in Sources */,
@@ -637,7 +654,11 @@
 					"\"$(SRCROOT)/support/JsonParser\"",
 				);
 				INFOPLIST_FILE = "InfoLunchTest/InfoLunchTest-Info.plist";
-				LIBRARY_SEARCH_PATHS = /Users/afecioru/Work/git/infolunch/InfoLunch/support/OCMock;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"\"/Users/afecioru/Work/git/infolunch/InfoLunch/support/OCMock\"",
+					"\"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/\"/**",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -666,7 +687,11 @@
 					"\"$(SRCROOT)/support/JsonParser\"",
 				);
 				INFOPLIST_FILE = "InfoLunchTest/InfoLunchTest-Info.plist";
-				LIBRARY_SEARCH_PATHS = /Users/afecioru/Work/git/infolunch/InfoLunch/support/OCMock;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"\"/Users/afecioru/Work/git/infolunch/InfoLunch/support/OCMock\"",
+					"\"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/\"/**",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",

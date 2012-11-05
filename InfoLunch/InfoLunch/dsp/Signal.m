@@ -194,7 +194,7 @@
 }
 
 - (Spectrum *)computeFFTAtPosition:(NSUInteger)position andWindowLength:(NSUInteger)windowLength {
-    NSMutableArray *fftArray = [NSMutableArray arrayWithCapacity:windowLength*2];
+    NSMutableArray *fftArray = [NSMutableArray array];
     double *fftBuffer = nil;
     if (samples && sampleCount && (position + windowLength <= sampleCount)) {
         fftBuffer = (double *) calloc(windowLength * 2, sizeof(double));
@@ -205,7 +205,7 @@
             [self computeFFTForFrame:fftBuffer withResolution:windowLength];
 
             for (NSUInteger i = 0; i < windowLength * 2; i++) {
-                [fftArray setObject:[NSNumber numberWithDouble:fabs(fftBuffer[i])] atIndexedSubscript:i];
+                [fftArray addObject:[NSNumber numberWithDouble:fabs(fftBuffer[i])]];
             }
         }
     }

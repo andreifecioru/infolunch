@@ -2,149 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="878ff7a0-b1a8-47c4-be4e-7efde055fefc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/InfoLunch/SineWave.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/InfoLunch/SineWave.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/InfoLunch/SpectrumViewController.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/InfoLunch/TimeViewController.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/InfoLunch/TimeViewController.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/InfoLunch/dsp/Spectrum.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/InfoLunch/dsp/Spectrum.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/InfoLunchTest/TestTemplate.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/InfoLunchTest/offline/TestOfflineSilenceGeneration.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/support/JsonParser/NSObject+SBJson.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/support/JsonParser/NSObject+SBJson.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/support/JsonParser/SBJson.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/support/JsonParser/SBJsonParser.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/support/JsonParser/SBJsonParser.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/support/JsonParser/SBJsonStreamParser.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/support/JsonParser/SBJsonStreamParser.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/support/JsonParser/SBJsonStreamParserAccumulator.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/support/JsonParser/SBJsonStreamParserAccumulator.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/support/JsonParser/SBJsonStreamParserAdapter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/support/JsonParser/SBJsonStreamParserAdapter.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/support/JsonParser/SBJsonStreamParserState.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/support/JsonParser/SBJsonStreamParserState.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/support/JsonParser/SBJsonStreamWriter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/support/JsonParser/SBJsonStreamWriter.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/support/JsonParser/SBJsonStreamWriterAccumulator.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/support/JsonParser/SBJsonStreamWriterAccumulator.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/support/JsonParser/SBJsonStreamWriterState.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/support/JsonParser/SBJsonStreamWriterState.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/support/JsonParser/SBJsonTokeniser.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/support/JsonParser/SBJsonTokeniser.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/support/JsonParser/SBJsonUTF8Stream.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/support/JsonParser/SBJsonUTF8Stream.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/support/JsonParser/SBJsonWriter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/support/JsonParser/SBJsonWriter.m" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/InfoLunch/ViewController.h" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/InfoLunch/ViewController.m" afterPath="$PROJECT_DIR$/InfoLunch/SpectrumViewController.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/InfoLunchTest/AsyncTestTemplate.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InfoLunch.xcodeproj/project.xcworkspace/xcuserdata/afecioru.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/InfoLunch.xcodeproj/project.xcworkspace/xcuserdata/afecioru.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InfoLunch.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/InfoLunch.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InfoLunch/AppDelegate.h" afterPath="$PROJECT_DIR$/InfoLunch/AppDelegate.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InfoLunch/AppDelegate.m" afterPath="$PROJECT_DIR$/InfoLunch/AppDelegate.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InfoLunch/InfoLunch-Info.plist" afterPath="$PROJECT_DIR$/InfoLunch/InfoLunch-Info.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InfoLunch/InfoLunch-Prefix.pch" afterPath="$PROJECT_DIR$/InfoLunch/InfoLunch-Prefix.pch" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InfoLunch/dsp/Signal.h" afterPath="$PROJECT_DIR$/InfoLunch/dsp/Signal.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InfoLunch/dsp/Signal.m" afterPath="$PROJECT_DIR$/InfoLunch/dsp/Signal.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InfoLunch/en.lproj/MainStoryboard_iPad.storyboard" afterPath="$PROJECT_DIR$/InfoLunch/en.lproj/MainStoryboard_iPad.storyboard" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InfoLunch/en.lproj/MainStoryboard_iPhone.storyboard" afterPath="$PROJECT_DIR$/InfoLunch/en.lproj/MainStoryboard_iPhone.storyboard" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InfoLunch/main.m" afterPath="$PROJECT_DIR$/InfoLunch/main.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InfoLunchTest/InfoLunchTest-Info.plist" afterPath="$PROJECT_DIR$/InfoLunchTest/InfoLunchTest-Info.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InfoLunchTest/InfoLunchTest-Prefix.pch" afterPath="$PROJECT_DIR$/InfoLunchTest/InfoLunchTest-Prefix.pch" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InfoLunchTest/main.m" afterPath="$PROJECT_DIR$/InfoLunchTest/main.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTAnnotation.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTAnnotation.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTAnnotationHostLayer.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTAnnotationHostLayer.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTAxis.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTAxis.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTAxisLabel.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTAxisLabel.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTAxisSet.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTAxisSet.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTBarPlot.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTBarPlot.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTBorderedLayer.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTBorderedLayer.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTColor.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTColor.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTColorSpace.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTColorSpace.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTConstraints.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTConstraints.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTDefinitions.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTDefinitions.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTFill.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTFill.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTGradient.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTGradient.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTGraph.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTGraph.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTGraphHostingView.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTGraphHostingView.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTGridLineGroup.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTGridLineGroup.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTGridLines.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTGridLines.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTImage.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTImage.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTLayer.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTLayer.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTLayerAnnotation.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTLayerAnnotation.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTLegend.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTLegend.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTLegendEntry.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTLegendEntry.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTLimitBand.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTLimitBand.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTLineCap.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTLineCap.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTLineStyle.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTLineStyle.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTMutableLineStyle.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTMutableLineStyle.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTMutableNumericData+TypeConversion.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTMutableNumericData+TypeConversion.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTMutableNumericData.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTMutableNumericData.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTMutablePlotRange.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTMutablePlotRange.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTMutableShadow.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTMutableShadow.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTMutableTextStyle.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTMutableTextStyle.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTNumericData+TypeConversion.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTNumericData+TypeConversion.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTNumericData.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTNumericData.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTNumericDataType.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTNumericDataType.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTPieChart.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTPieChart.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTPlatformSpecificCategories.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTPlatformSpecificCategories.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTPlot.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTPlot.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTPlotArea.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTPlotArea.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTPlotAreaFrame.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTPlotAreaFrame.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTPlotGroup.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTPlotGroup.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTPlotRange.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTPlotRange.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTPlotSpace.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTPlotSpace.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTPlotSpaceAnnotation.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTPlotSpaceAnnotation.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTPlotSymbol.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTPlotSymbol.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTRangePlot.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTRangePlot.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTResponder.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTResponder.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTScatterPlot.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTScatterPlot.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTShadow.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTShadow.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTTextLayer.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTTextLayer.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTTextStyle.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTTextStyle.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTTheme.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTTheme.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTTimeFormatter.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTTimeFormatter.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTTradingRangePlot.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTTradingRangePlot.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTXYAxis.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTXYAxis.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTXYAxisSet.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTXYAxisSet.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTXYGraph.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTXYGraph.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTXYPlotSpace.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/CPTXYPlotSpace.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/NSCoderExtensions.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/NSCoderExtensions.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/NSDecimalNumberExtensions.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/NSDecimalNumberExtensions.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/NSNumberExtensions.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/NSNumberExtensions.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/_CPTConstraintsFixed.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/_CPTConstraintsFixed.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/_CPTConstraintsRelative.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/_CPTConstraintsRelative.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/_CPTFillColor.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/_CPTFillColor.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/_CPTFillGradient.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/_CPTFillGradient.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/_CPTFillImage.h" afterPath="$PROJECT_DIR$/support/CorePlot/CorePlotHeaders/_CPTFillImage.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHAsyncTestCase.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHAsyncTestCase.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHImageDiffView.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHImageDiffView.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHMockNSHTTPURLResponse.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHMockNSHTTPURLResponse.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHMockNSURLConnection.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHMockNSURLConnection.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHTest+JUnitXML.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHTest+JUnitXML.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHTest.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHTest.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHTestCase.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHTestCase.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHTestGroup+JUnitXML.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHTestGroup+JUnitXML.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHTestGroup.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHTestGroup.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHTestMacros.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHTestMacros.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHTestOperation.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHTestOperation.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHTestRunner.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHTestRunner.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHTestSuite.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHTestSuite.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHTestViewModel.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHTestViewModel.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHTesting.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHTesting.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHUIImageViewControl.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHUIImageViewControl.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHUnit.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHUnit.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHUnitIOSAppDelegate.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHUnitIOSAppDelegate.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHUnitIOSTableViewDataSource.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHUnitIOSTableViewDataSource.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHUnitIOSTestView.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHUnitIOSTestView.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHUnitIOSTestViewController.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHUnitIOSTestViewController.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHUnitIOSView.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHUnitIOSView.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHUnitIOSViewController.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHUnitIOSViewController.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHUnitIPhoneAppDelegate.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHUnitIPhoneAppDelegate.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHViewTestCase.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/GHViewTestCase.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/NSException+GHTestFailureExceptions.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/NSException+GHTestFailureExceptions.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/NSValue+GHValueFormatter.h" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Headers/NSValue+GHValueFormatter.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Resources/Info.plist" afterPath="$PROJECT_DIR$/support/GHUnitIOS.framework/Versions/A/Resources/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InfoLunchTest/TestTemplate.m" afterPath="$PROJECT_DIR$/InfoLunchTest/TestTemplate.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InfoLunchTest/offline/TestOfflineFFTComputationAsync.m" afterPath="$PROJECT_DIR$/InfoLunchTest/offline/TestOfflineFFTComputationAsync.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InfoLunchTest/online/TestOnlineToneGenerationFromURL.m" afterPath="$PROJECT_DIR$/InfoLunchTest/online/TestOnlineToneGenerationFromURL.m" />
     </list>
     <ignored path="InfoLunch.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -163,30 +27,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_6.0_1" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="TestOnlineToneGenerationFromURL.m" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/InfoLunchTest/online/TestOnlineToneGenerationFromURL.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="52" selection-start="407" selection-end="407" vertical-scroll-proportion="0.34735203">
-              <folding>
-                <element signature="e#21#60#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestOfflineToneGenerationFromURL.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InfoLunchTest/offline/TestOfflineToneGenerationFromURL.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="21" selection-start="270" selection-end="279" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#21#60#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -216,8 +57,8 @@
         <option value="$PROJECT_DIR$/InfoLunch/dsp/Signal.h" />
         <option value="$PROJECT_DIR$/InfoLunchTest/online/TestOfflineToneGenerationFromURL.m" />
         <option value="$PROJECT_DIR$/InfoLunch/dsp/Signal.m" />
-        <option value="$PROJECT_DIR$/InfoLunchTest/offline/TestOfflineToneGenerationFromURL.m" />
         <option value="$PROJECT_DIR$/InfoLunchTest/online/TestOnlineToneGenerationFromURL.m" />
+        <option value="$PROJECT_DIR$/InfoLunchTest/offline/TestOfflineToneGenerationFromURL.m" />
       </list>
     </option>
   </component>
@@ -348,6 +189,20 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InfoLunch" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frameworks" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -361,7 +216,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="Application.InfoLunchTest">
+  <component name="RunManager" selected="Application.InfoLunch">
     <configuration default="false" name="InfoLunch" type="AppleRunConfiguration" factoryName="Application" temporary="true" SCHEME_NAME="InfoLunch" PROJECT_NAME="InfoLunch" TARGET_NAME="InfoLunch" CONFIG_NAME="Debug" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="InfoLunch" RUN_TARGET_NAME="InfoLunch" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
@@ -426,22 +281,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1090" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.4712704" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.487612" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19240907" sideWeight="0.67168677" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19240907" sideWeight="0.67168677" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3995984" sideWeight="0.75329465" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32831326" sideWeight="0.41486558" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32831326" sideWeight="0.5814444" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32831326" sideWeight="0.41750133" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32831326" sideWeight="0.57880867" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.49815497" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.46705323" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -522,13 +377,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InfoLunchTest/offline/TestOfflineFFTComputation.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="152" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/support/GHUnitIOS.framework/Headers/GHAsyncTestCase.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="28" selection-start="1440" selection-end="1464" vertical-scroll-proportion="0.0" />
@@ -597,16 +445,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/InfoLunchTest/offline/TestOfflineToneGenerationFromURL.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="21" selection-start="270" selection-end="279" vertical-scroll-proportion="0.0">
+        <state line="96" column="96" selection-start="2895" selection-end="2987" vertical-scroll-proportion="0.788162">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InfoLunchTest/online/TestOnlineToneGenerationFromURL.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="60" selection-start="311" selection-end="326" vertical-scroll-proportion="0.41121495">
           <folding>
             <element signature="e#21#60#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InfoLunchTest/online/TestOnlineToneGenerationFromURL.m">
+    <entry file="file://$PROJECT_DIR$/InfoLunchTest/offline/TestOfflineFFTComputation.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="52" selection-start="407" selection-end="407" vertical-scroll-proportion="0.34735203">
+        <state line="11" column="49" selection-start="283" selection-end="293" vertical-scroll-proportion="0.37694705">
           <folding>
             <element signature="e#21#60#0" expanded="true" />
           </folding>

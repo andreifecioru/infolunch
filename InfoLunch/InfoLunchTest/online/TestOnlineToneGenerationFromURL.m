@@ -28,10 +28,10 @@
     testSignal = [[Signal alloc] init];
     testSignal.delegate = self;
 
-    referenceSamples = [NSMutableArray arrayWithCapacity:LENGTH];
+    referenceSamples = [NSMutableArray array];
     for (NSUInteger i = 0; i < LENGTH; i++) {
         NSNumber *sample = [NSNumber numberWithDouble:AMPLITUDE* sin(2*M_PI*FREQUENCY/SAMPLE_RATE*i)];
-        [referenceSamples setObject:sample atIndexedSubscript:i];
+        [referenceSamples addObject:sample];
     }
 }
 
@@ -49,7 +49,7 @@
 
 #pragma mark - Unit tests
 - (void)testProperGenerationOf100HzThoneSampleBySample {
-    // we are starting an asyn. operation.
+    // we are starting an async. operation.
     [self prepare];
 
     [testSignal loadSineWaveFromURL:URL];

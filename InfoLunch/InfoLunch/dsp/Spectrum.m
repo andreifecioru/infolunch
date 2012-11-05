@@ -14,7 +14,7 @@
 }
 
 - (NSNumber *)maxValue {
-    return (NSNumber *) fftData[binWithMaxValue];
+    return (NSNumber *) [fftData objectAtIndex:binWithMaxValue];
 }
 
 + (Spectrum *) spectrumWithFFTData:(NSArray *)fftData andSampleRate:(NSUInteger)sampleRate {
@@ -24,8 +24,8 @@
 
     double _max = 0;
     for (NSUInteger i = 0; i < fftData.count/2; i++) {
-        if ([fftData[i] doubleValue] > _max) {
-            _max = [fftData[i] doubleValue];
+        if ([[fftData objectAtIndex:i] doubleValue] > _max) {
+            _max = [[fftData objectAtIndex:i] doubleValue];
             spectrum->binWithMaxValue = i;
         }
     }

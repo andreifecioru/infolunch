@@ -42,7 +42,7 @@
 
 #pragma mark - Unit tests
 - (void)testMaxFrequncyBinIsCorrect {
-    // we are starting an asyn. operation.
+    // we are starting an async. operation.
     [self prepare];
 
     [testSignal computeFFTAsyncAtPosition:0 andWindowLength:LENGTH];

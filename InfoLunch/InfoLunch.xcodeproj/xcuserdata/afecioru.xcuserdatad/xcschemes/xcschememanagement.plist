@@ -6,8 +6,6 @@
 	<dict>
 		<key>InfoLunch.xcscheme</key>
 		<dict>
-			<key>isShown</key>
-			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
@@ -19,22 +17,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>220B961689D42263020DE17D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>220B9B297B732CCAE0582543</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C95DA1A1163EE34F00D8C069</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C95DA1C1163EE9B800D8C069</key>
 		<dict>
 			<key>primary</key>
 			<true/>
