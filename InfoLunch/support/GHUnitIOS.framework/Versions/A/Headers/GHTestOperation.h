@@ -32,9 +32,9 @@
 /*!
  Test for running in the context of an NSOperationQueue.
  */
-@interface GHTestOperation : NSOperation { 
-  id<GHTest> test_;
-  GHTestOptions options_;
+@interface GHTestOperation : NSOperation {
+    id <GHTest> test_;
+    GHTestOptions options_;
 }
 
 /*!
@@ -42,6 +42,6 @@
  @param test Test
  @param options Options
  */
-- (id)initWithTest:(id<GHTest>)test options:(GHTestOptions)options;
+- (id)initWithTest:(id <GHTest>)test options:(GHTestOptions)options;
 
 @end

@@ -29,12 +29,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GHUIImageViewControl : UIControl { 
-  UIImageView *_imageView;
+@interface GHUIImageViewControl : UIControl {
+    UIImageView *_imageView;
 }
 
-@property (readonly, nonatomic) UIImageView *imageView;
-@property (nonatomic) UIImage *image;
+@property(readonly, nonatomic) UIImageView *imageView;
+@property(nonatomic) UIImage *image;
 
 - (id)initWithFrame:(CGRect)frame image:(UIImage *)image highlightedImage:(UIImage *)highlightedImage;
 

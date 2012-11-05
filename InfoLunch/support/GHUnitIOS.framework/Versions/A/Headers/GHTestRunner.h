@@ -70,21 +70,21 @@
  @param runner Runner
  @param test Test
  */
-- (void)testRunner:(GHTestRunner *)runner didStartTest:(id<GHTest>)test;
+- (void)testRunner:(GHTestRunner *)runner didStartTest:(id <GHTest>)test;
 
 /*!
  Test run did update test.
  @param runner Runner
  @param test Test
  */
-- (void)testRunner:(GHTestRunner *)runner didUpdateTest:(id<GHTest>)test;
+- (void)testRunner:(GHTestRunner *)runner didUpdateTest:(id <GHTest>)test;
 
 /*!
  Test run did end test.
  @param runner Runner
  @param test Test
  */
-- (void)testRunner:(GHTestRunner *)runner didEndTest:(id<GHTest>)test;
+- (void)testRunner:(GHTestRunner *)runner didEndTest:(id <GHTest>)test;
 
 /*!
  Test run did cancel.
@@ -111,7 +111,7 @@
  @param test Test
  @param didLog Message
  */
-- (void)testRunner:(GHTestRunner *)runner test:(id<GHTest>)test didLog:(NSString *)didLog;
+- (void)testRunner:(GHTestRunner *)runner test:(id <GHTest>)test didLog:(NSString *)didLog;
 
 @end
 
@@ -126,37 +126,37 @@
     [runner runTests];
  
  */
-@interface GHTestRunner : NSObject <GHTestDelegate> { 
-  
-  id<GHTest> test_; // The test to run; Could be a GHTestGroup (suite), GHTestGroup (test case), or GHTest (target/selector)
-  
-  NSObject<GHTestRunnerDelegate> *__unsafe_unretained delegate_; // weak
-    
-  GHTestOptions options_; 
-  
-  BOOL running_;
-  BOOL cancelling_;
-  
-  NSTimeInterval startInterval_;
-  
-  NSOperationQueue *operationQueue_; //! If running a suite in operation queue
+@interface GHTestRunner : NSObject <GHTestDelegate> {
+
+    id <GHTest> test_; // The test to run; Could be a GHTestGroup (suite), GHTestGroup (test case), or GHTest (target/selector)
+
+    NSObject <GHTestRunnerDelegate> *__unsafe_unretained delegate_; // weak
+
+    GHTestOptions options_;
+
+    BOOL running_;
+    BOOL cancelling_;
+
+    NSTimeInterval startInterval_;
+
+    NSOperationQueue *operationQueue_; //! If running a suite in operation queue
 }
 
-@property  (strong) id<GHTest> test;
-@property (unsafe_unretained) NSObject<GHTestRunnerDelegate> *delegate;
-@property (assign) GHTestOptions options;
-@property (readonly) GHTestStats stats;
-@property (readonly, getter=isRunning) BOOL running;
-@property (readonly, getter=isCancelling) BOOL cancelling;
-@property (readonly) NSTimeInterval interval;
-@property (strong, nonatomic) NSOperationQueue *operationQueue;
-@property (assign, nonatomic, getter=isInParallel) BOOL inParallel;
+@property(strong) id <GHTest> test;
+@property(unsafe_unretained) NSObject <GHTestRunnerDelegate> *delegate;
+@property(assign) GHTestOptions options;
+@property(readonly) GHTestStats stats;
+@property(readonly, getter=isRunning) BOOL running;
+@property(readonly, getter=isCancelling) BOOL cancelling;
+@property(readonly) NSTimeInterval interval;
+@property(strong, nonatomic) NSOperationQueue *operationQueue;
+@property(assign, nonatomic, getter=isInParallel) BOOL inParallel;
 
 /*!
  Create runner for test.
  @param test Test
  */
-- (id)initWithTest:(id<GHTest>)test;
+- (id)initWithTest:(id <GHTest>)test;
 
 /*!
  Create runner for all tests.

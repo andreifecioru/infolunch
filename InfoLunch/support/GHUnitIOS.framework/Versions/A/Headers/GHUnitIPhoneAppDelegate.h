@@ -30,7 +30,7 @@
 
 // For backwards compatibility (see GHUnitIOSAppDelegate)
 @interface GHUnitIPhoneAppDelegate : GHUnitIOSAppDelegate {
-    
+
 }
 
 @end

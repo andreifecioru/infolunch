@@ -66,15 +66,15 @@ extern NSString *const GHMockNSURLConnectionException;
 
  */
 @interface GHMockNSURLConnection : NSObject {
-	NSURLRequest *request_;
-	id delegate_; // weak
-	
-	BOOL cancelled_;	
-	BOOL started_;
+    NSURLRequest *request_;
+    id delegate_; // weak
+
+    BOOL cancelled_;
+    BOOL started_;
 }
 
-@property (readonly, nonatomic, getter=isStarted) BOOL started;
-@property (readonly, nonatomic, getter=isCancelled) BOOL cancelled;
+@property(readonly, nonatomic, getter=isStarted) BOOL started;
+@property(readonly, nonatomic, getter=isCancelled) BOOL cancelled;
 
 // Mocked version of NSURLConnection#initWithRequest:delegate:
 - (id)initWithRequest:(NSURLRequest *)request delegate:(id)delegate;
@@ -154,7 +154,7 @@ extern NSString *const GHMockNSURLConnectionException;
  @param statusCode Status code for response
  @param MIMEType Content type for response header
  @param afterDelay Delay before responding (if < 0, there is no delay)
- */ 
+ */
 - (void)receiveData:(NSData *)data statusCode:(NSInteger)statusCode MIMEType:(NSString *)MIMEType afterDelay:(NSTimeInterval)afterDelay;
 
 /*!

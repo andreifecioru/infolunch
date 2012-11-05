@@ -4,7 +4,7 @@
 /**
  *	@brief The basis of all event processing in Core Plot.
  **/
-@protocol CPTResponder<NSObject>
+@protocol CPTResponder <NSObject>
 
 /// @name User Interaction
 /// @{
@@ -17,7 +17,7 @@
  *	@param interactionPoint The coordinates of the interaction.
  *  @return Whether the event was handled or not.
  **/
--(BOOL)pointingDeviceDownEvent:(id)event atPoint:(CGPoint)interactionPoint;
+- (BOOL)pointingDeviceDownEvent:(id)event atPoint:(CGPoint)interactionPoint;
 
 /**
  *	@brief (Required) Informs the receiver that the user has
@@ -27,7 +27,7 @@
  *	@param interactionPoint The coordinates of the interaction.
  *  @return Whether the event was handled or not.
  **/
--(BOOL)pointingDeviceUpEvent:(id)event atPoint:(CGPoint)interactionPoint;
+- (BOOL)pointingDeviceUpEvent:(id)event atPoint:(CGPoint)interactionPoint;
 
 /**
  *	@brief (Required) Informs the receiver that the user has moved
@@ -37,7 +37,7 @@
  *	@param interactionPoint The coordinates of the interaction.
  *  @return Whether the event was handled or not.
  **/
--(BOOL)pointingDeviceDraggedEvent:(id)event atPoint:(CGPoint)interactionPoint;
+- (BOOL)pointingDeviceDraggedEvent:(id)event atPoint:(CGPoint)interactionPoint;
 
 /**
  *	@brief (Required) Informs the receiver that tracking of
@@ -47,7 +47,7 @@
  *	@param event The OS event.
  *  @return Whether the event was handled or not.
  **/
--(BOOL)pointingDeviceCancelledEvent:(id)event;
+- (BOOL)pointingDeviceCancelledEvent:(id)event;
 ///	@}
 
 @end

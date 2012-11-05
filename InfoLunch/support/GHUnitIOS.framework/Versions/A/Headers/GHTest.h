@@ -34,17 +34,17 @@
  Test status.
  */
 typedef enum {
-  GHTestStatusNone = 0,
-  GHTestStatusRunning, //! Test is running
-  GHTestStatusCancelling, //! Test is being cancelled
-  GHTestStatusCancelled, //! Test was cancelled
-  GHTestStatusSucceeded, //! Test finished and succeeded
-  GHTestStatusErrored, //! Test finished and errored
+    GHTestStatusNone = 0,
+    GHTestStatusRunning, //! Test is running
+    GHTestStatusCancelling, //! Test is being cancelled
+    GHTestStatusCancelled, //! Test was cancelled
+    GHTestStatusSucceeded, //! Test finished and succeeded
+    GHTestStatusErrored, //! Test finished and errored
 } GHTestStatus;
 
 enum {
-  GHTestOptionReraiseExceptions = 1 << 0, // Allows exceptions to be raised (so you can trigger the debugger)
-  GHTestOptionForceSetUpTearDownClass = 1 << 1, // Runs setUpClass/tearDownClass for this (each) test; Used when re-running a single test in a group
+    GHTestOptionReraiseExceptions = 1 << 0, // Allows exceptions to be raised (so you can trigger the debugger)
+    GHTestOptionForceSetUpTearDownClass = 1 << 1, // Runs setUpClass/tearDownClass for this (each) test; Used when re-running a single test in a group
 };
 typedef NSInteger GHTestOptions;
 
@@ -68,10 +68,10 @@ extern BOOL GHTestStatusEnded(GHTestStatus status);
  Test stats.
  */
 typedef struct {
-  NSInteger succeedCount; // Number of succeeded tests
-  NSInteger failureCount; // Number of failed tests
-  NSInteger cancelCount; // Number of aborted tests
-  NSInteger testCount; // Total number of tests 
+    NSInteger succeedCount; // Number of succeeded tests
+    NSInteger failureCount; // Number of failed tests
+    NSInteger cancelCount; // Number of aborted tests
+    NSInteger testCount; // Total number of tests
 } GHTestStats;
 
 /*!
@@ -98,47 +98,47 @@ extern NSString *NSStringFromGHTestStats(GHTestStats stats);
 /*!
  Unique identifier for test.
  */
-@property (readonly, nonatomic) NSString *identifier;
+@property(readonly, nonatomic) NSString *identifier;
 
 /*!
  Name (readable) for test.
  */
-@property (readonly, nonatomic) NSString *name;
+@property(readonly, nonatomic) NSString *name;
 
 /*!
  How long the test took to run. Defaults to -1, if not run.
  */
-@property (assign, nonatomic) NSTimeInterval interval;
+@property(assign, nonatomic) NSTimeInterval interval;
 
 /*!
  Test status.
  */
-@property (assign, nonatomic) GHTestStatus status;
+@property(assign, nonatomic) GHTestStatus status;
 
 /*!
  Test stats.
  */
-@property (readonly, nonatomic) GHTestStats stats;
+@property(readonly, nonatomic) GHTestStats stats;
 
 /*!
  Exception that occurred.
  */
-@property (retain, nonatomic) NSException *exception;
+@property(retain, nonatomic) NSException *exception;
 
 /*!
  Whether test is disabled.
  */
-@property (assign, nonatomic, getter=isDisabled) BOOL disabled;
+@property(assign, nonatomic, getter=isDisabled) BOOL disabled;
 
 /*!
  Whether test is hidden.
  */
-@property (assign, nonatomic, getter=isHidden) BOOL hidden;
+@property(assign, nonatomic, getter=isHidden) BOOL hidden;
 
 /*!
  Delegate for test.
  */
-@property (assign, nonatomic) id<GHTestDelegate> delegate; // weak
+@property(assign, nonatomic) id <GHTestDelegate> delegate; // weak
 
 /*!
  Run the test.
@@ -178,21 +178,21 @@ extern NSString *NSStringFromGHTestStats(GHTestStats stats);
  @param test Test
  @param source If tests are nested, than source corresponds to the originator of the delegate call
  */
-- (void)testDidStart:(id<GHTest>)test source:(id<GHTest>)source;
+- (void)testDidStart:(id <GHTest>)test source:(id <GHTest>)source;
 
 /*!
  Test updated.
  @param test Test
  @param source If tests are nested, than source corresponds to the originator of the delegate call
  */
-- (void)testDidUpdate:(id<GHTest>)test source:(id<GHTest>)source;
+- (void)testDidUpdate:(id <GHTest>)test source:(id <GHTest>)source;
 
 /*!
  Test ended.
  @param test Test
  @param source If tests are nested, than source corresponds to the originator of the delegate call
  */
-- (void)testDidEnd:(id<GHTest>)test source:(id<GHTest>)source;
+- (void)testDidEnd:(id <GHTest>)test source:(id <GHTest>)source;
 
 /*!
  Test logged a message.
@@ -200,7 +200,7 @@ extern NSString *NSStringFromGHTestStats(GHTestStats stats);
  @param didLog Message
  @param source If tests are nested, than source corresponds to the originator of the delegate call
  */
-- (void)test:(id<GHTest>)test didLog:(NSString *)didLog source:(id<GHTest>)source;
+- (void)test:(id <GHTest>)test didLog:(NSString *)didLog source:(id <GHTest>)source;
 
 @end
 
@@ -228,25 +228,25 @@ extern NSString *NSStringFromGHTestStats(GHTestStats stats);
 
  */
 @interface GHTest : NSObject <GHTest, GHTestCaseLogWriter> {
-  
-  id target_;
-  SEL selector_;
-  
-  NSString *identifier_;
-  NSString *name_;  
-  GHTestStatus status_;
-  NSTimeInterval interval_;
-  BOOL disabled_;
-  BOOL hidden_;
-  NSException *exception_; // If failed
-    
-  NSMutableArray *log_;
+
+    id target_;
+    SEL selector_;
+
+    NSString *identifier_;
+    NSString *name_;
+    GHTestStatus status_;
+    NSTimeInterval interval_;
+    BOOL disabled_;
+    BOOL hidden_;
+    NSException *exception_; // If failed
+
+    NSMutableArray *log_;
 
 }
 
-@property (readonly, strong, nonatomic) id target;
-@property (readonly, nonatomic) SEL selector;
-@property (readonly, strong, nonatomic) NSArray *log;
+@property(readonly, strong, nonatomic) id target;
+@property(readonly, nonatomic) SEL selector;
+@property(readonly, strong, nonatomic) NSArray *log;
 
 /*!
  Create test with identifier, name.

@@ -36,14 +36,14 @@
  View controller for a test.
  */
 @interface GHUnitIOSTestViewController : UIViewController <GHTestRunnerDelegate, GHUnitIOSTestViewDelegate> {
-  GHUnitIOSTestView *testView_;
-  GHImageDiffView *imageDiffView_;
+    GHUnitIOSTestView *testView_;
+    GHImageDiffView *imageDiffView_;
 
-  GHTestNode *testNode_;
-  
-  GHTestRunner *runner_;
+    GHTestNode *testNode_;
+
+    GHTestRunner *runner_;
 }
 
-- (void)setTest:(id<GHTest>)test;
+- (void)setTest:(id <GHTest>)test;
 
 @end

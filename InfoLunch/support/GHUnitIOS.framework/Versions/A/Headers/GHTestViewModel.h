@@ -40,30 +40,30 @@
 @end
 
 typedef enum {
-  GHTestNodeFilterNone = 0,
-  GHTestNodeFilterFailed = 1
+    GHTestNodeFilterNone = 0,
+    GHTestNodeFilterFailed = 1
 } GHTestNodeFilter;
 
 /*!
  Test view model for use in a tree view.
  */
 @interface GHTestViewModel : NSObject <GHTestNodeDelegate> {
-	
-  NSString *identifier_;
-	GHTestSuite *suite_;
-	GHTestNode *root_;
-	
-	GHTestRunner *runner_;
-	
-	NSMutableDictionary *map_; // id<GHTest>#identifier -> GHTestNode
 
-	BOOL editing_;
+    NSString *identifier_;
+    GHTestSuite *suite_;
+    GHTestNode *root_;
 
-	NSMutableDictionary *defaults_;
+    GHTestRunner *runner_;
+
+    NSMutableDictionary *map_; // id<GHTest>#identifier -> GHTestNode
+
+    BOOL editing_;
+
+    NSMutableDictionary *defaults_;
 }
 
-@property (readonly, nonatomic) GHTestNode *root;
-@property (assign, nonatomic, getter=isEditing) BOOL editing;
+@property(readonly, nonatomic) GHTestNode *root;
+@property(assign, nonatomic, getter=isEditing) BOOL editing;
 
 /*!
  Create view model with root test group node.
@@ -91,7 +91,7 @@ typedef enum {
 
  @param test Find test
  */
-- (GHTestNode *)findTestNodeForTest:(id<GHTest>)test;
+- (GHTestNode *)findTestNodeForTest:(id <GHTest>)test;
 
 /*!
  Find the first failure.
@@ -131,7 +131,7 @@ typedef enum {
  @param test Test
  @result Index path
  */
-- (NSIndexPath *)indexPathToTest:(id<GHTest>)test;
+- (NSIndexPath *)indexPathToTest:(id <GHTest>)test;
 
 /*!
  Load defaults (user settings saved with saveDefaults).
@@ -150,7 +150,7 @@ typedef enum {
  @param inParallel If YES, will run tests in operation queue
  @param options Options
  */
-- (void)run:(id<GHTestRunnerDelegate>)delegate inParallel:(BOOL)inParallel options:(GHTestOptions)options;
+- (void)run:(id <GHTestRunnerDelegate>)delegate inParallel:(BOOL)inParallel options:(GHTestOptions)options;
 
 /*!
  Cancel test run.
@@ -169,44 +169,59 @@ typedef enum {
 
 @interface GHTestNode : NSObject {
 
-	id<GHTest> test_;
-	NSMutableArray */*of GHTestNode*/children_;
-  NSMutableArray */* of GHTestNode*/filteredChildren_;
+    id <GHTest> test_;
+    NSMutableArray */*of GHTestNode*/children_;
+    NSMutableArray */* of GHTestNode*/filteredChildren_;
 
-	id<GHTestNodeDelegate> __unsafe_unretained delegate_;
-  GHTestNodeFilter filter_;
-  NSString *textFilter_;
+    id <GHTestNodeDelegate> __unsafe_unretained delegate_;
+    GHTestNodeFilter filter_;
+    NSString *textFilter_;
 }
 
-@property (readonly, strong, nonatomic) NSArray */* of GHTestNode*/children;
-@property (readonly, strong, nonatomic) id<GHTest> test;
-@property (unsafe_unretained, nonatomic) id<GHTestNodeDelegate> delegate;
-@property (assign, nonatomic) GHTestNodeFilter filter;
-@property (strong, nonatomic) NSString *textFilter;
+@property(readonly, strong, nonatomic) NSArray */* of GHTestNode*/children;
+@property(readonly, strong, nonatomic) id <GHTest> test;
+@property(unsafe_unretained, nonatomic) id <GHTestNodeDelegate> delegate;
+@property(assign, nonatomic) GHTestNodeFilter filter;
+@property(strong, nonatomic) NSString *textFilter;
 
-- (id)initWithTest:(id<GHTest>)test children:(NSArray */*of id<GHTest>*/)children source:(GHTestViewModel *)source;
-+ (GHTestNode *)nodeWithTest:(id<GHTest>)test children:(NSArray */*of id<GHTest>*/)children source:(GHTestViewModel *)source;
+- (id)initWithTest:(id <GHTest>)test children:(NSArray */*of id<GHTest>*/)children source:(GHTestViewModel *)source;
+
++ (GHTestNode *)nodeWithTest:(id <GHTest>)test children:(NSArray */*of id<GHTest>*/)children source:(GHTestViewModel *)source;
 
 - (NSString *)identifier;
+
 - (NSString *)name;
+
 - (NSString *)nameWithStatus;
 
 - (GHTestStatus)status;
+
 - (NSString *)statusString;
+
 - (NSString *)stackTrace;
+
 - (NSString *)exceptionFilename;
+
 - (NSInteger)exceptionLineNumber;
+
 - (NSString *)log;
+
 - (BOOL)isRunning;
+
 - (BOOL)isDisabled;
+
 - (BOOL)isHidden;
+
 - (BOOL)isEnded;
+
 - (BOOL)isGroupTest; // YES if test has "sub tests"
 
 - (BOOL)isSelected;
+
 - (void)setSelected:(BOOL)selected;
 
 - (BOOL)hasChildren;
+
 - (BOOL)failed;
 
 - (void)notifyChanged;

@@ -61,10 +61,10 @@ BOOL isTestFixtureOfClass(Class aClass, Class testCaseClass);
 
  Much of this is borrowed from GTM/UnitTesting.
  */
-@interface GHTesting : NSObject { 
+@interface GHTesting : NSObject {
 
-  NSMutableArray/* of NSString*/ *testCaseClassNames_;
-  
+    NSMutableArray/* of NSString*/ *testCaseClassNames_;
+
 }
 
 /*!
@@ -115,14 +115,14 @@ BOOL isTestFixtureOfClass(Class aClass, Class testCaseClass);
  @param test Test
  @result Filename
  */
-+ (NSString *)exceptionFilenameForTest:(id<GHTest>)test;
++ (NSString *)exceptionFilenameForTest:(id <GHTest>)test;
 
 /*!
  Line number for cause of test exception.
  @param test Test
  @result Line number
  */
-+ (NSInteger)exceptionLineNumberForTest:(id<GHTest>)test;
++ (NSInteger)exceptionLineNumberForTest:(id <GHTest>)test;
 
 /*!
  Run test.
@@ -132,8 +132,8 @@ BOOL isTestFixtureOfClass(Class aClass, Class testCaseClass);
  @param interval Time to run the test
  @param reraiseExceptions If YES, will re-raise exceptions
  */
-+ (BOOL)runTestWithTarget:(id)target selector:(SEL)selector exception:(NSException **)exception 
-       interval:(NSTimeInterval *)interval reraiseExceptions:(BOOL)reraiseExceptions;
++ (BOOL)runTestWithTarget:(id)target selector:(SEL)selector exception:(NSException **)exception
+                 interval:(NSTimeInterval *)interval reraiseExceptions:(BOOL)reraiseExceptions;
 
 /*!
  Same as normal runTest without catching exceptions.
@@ -146,7 +146,7 @@ BOOL isTestFixtureOfClass(Class aClass, Class testCaseClass);
 
 @end
 
-@protocol GHSenTestCase 
+@protocol GHSenTestCase
 - (void)raiseAfterFailure;
 @end
 

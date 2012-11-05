@@ -33,9 +33,9 @@
  Application delegate for the iOS test application.
  */
 @interface GHUnitIOSAppDelegate : NSObject <UIApplicationDelegate> {
-  UIWindow *window_;
-  
-  UINavigationController *navigationController_;  
+    UIWindow *window_;
+
+    UINavigationController *navigationController_;
 }
 
 @end

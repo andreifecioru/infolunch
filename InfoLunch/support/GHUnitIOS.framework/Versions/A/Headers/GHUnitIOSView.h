@@ -34,24 +34,24 @@
  Main view for iOS test application.
  */
 @interface GHUnitIOSView : UIView {
-  UISearchBar *searchBar_;
-  
-  UITableView *tableView_;
-  
-  //! Status label at bottom of the view
-  UILabel *statusLabel_;
- 
-  UISegmentedControl *filterControl_;
-    
-  UIToolbar *runToolbar_;  
-  
-  UIView *footerView_;
+    UISearchBar *searchBar_;
+
+    UITableView *tableView_;
+
+    //! Status label at bottom of the view
+    UILabel *statusLabel_;
+
+    UISegmentedControl *filterControl_;
+
+    UIToolbar *runToolbar_;
+
+    UIView *footerView_;
 }
 
-@property (readonly, nonatomic) UILabel *statusLabel;
-@property (readonly, nonatomic) UISegmentedControl *filterControl;
-@property (readonly, nonatomic) UISearchBar *searchBar;
-@property (readonly, nonatomic) UITableView *tableView;
+@property(readonly, nonatomic) UILabel *statusLabel;
+@property(readonly, nonatomic) UISegmentedControl *filterControl;
+@property(readonly, nonatomic) UISearchBar *searchBar;
+@property(readonly, nonatomic) UITableView *tableView;
 
 
 @end

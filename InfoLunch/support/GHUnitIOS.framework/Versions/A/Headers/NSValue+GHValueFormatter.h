@@ -63,7 +63,7 @@
 #import <Foundation/Foundation.h>
 
 // SENTE_BEGIN
-@interface NSValue(GHValueFormatter)
+@interface NSValue (GHValueFormatter)
 - (NSString *)ghu_contentDescription;
 @end
 // SENTE_END

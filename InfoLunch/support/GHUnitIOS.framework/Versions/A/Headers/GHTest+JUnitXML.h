@@ -31,7 +31,7 @@
 
 #import "GHTest.h"
 
-@interface GHTest(JUnitXML)
+@interface GHTest (JUnitXML)
 
 /*!
  Return test results in JUnit XML format for external parsing use

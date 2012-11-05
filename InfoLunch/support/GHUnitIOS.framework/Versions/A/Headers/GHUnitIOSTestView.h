@@ -34,23 +34,25 @@
 
 @protocol GHUnitIOSTestViewDelegate <NSObject>
 - (void)testViewDidSelectSavedImage:(GHUnitIOSTestView *)testView;
+
 - (void)testViewDidSelectRenderedImage:(GHUnitIOSTestView *)testView;
+
 - (void)testViewDidApproveChange:(GHUnitIOSTestView *)testView;
 @end
 
 @interface GHUnitIOSTestView : UIScrollView {
-  id<GHUnitIOSTestViewDelegate> __unsafe_unretained controlDelegate_;
+    id <GHUnitIOSTestViewDelegate> __unsafe_unretained controlDelegate_;
 
-  // TODO(johnb): Perhaps hold a scrollview here as subclassing UIViews can be weird.
+    // TODO(johnb): Perhaps hold a scrollview here as subclassing UIViews can be weird.
 
-  GHUIImageViewControl *savedImageView_;
-  GHUIImageViewControl *renderedImageView_;
+    GHUIImageViewControl *savedImageView_;
+    GHUIImageViewControl *renderedImageView_;
 
-  UIButton *approveButton_;
+    UIButton *approveButton_;
 
-  UILabel *textLabel_;
+    UILabel *textLabel_;
 }
-@property(unsafe_unretained, nonatomic) id<GHUnitIOSTestViewDelegate> controlDelegate;
+@property(unsafe_unretained, nonatomic) id <GHUnitIOSTestViewDelegate> controlDelegate;
 
 - (void)setSavedImage:(UIImage *)savedImage renderedImage:(UIImage *)renderedImage text:(NSString *)text;
 

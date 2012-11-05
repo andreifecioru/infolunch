@@ -36,24 +36,25 @@
  Main view controller for the iOS test application.
  */
 @interface GHUnitIOSViewController : UIViewController <UITableViewDelegate, GHTestRunnerDelegate, UISearchBarDelegate> {
-    
-  GHUnitIOSView *view_;
 
-  GHUnitIOSTableViewDataSource *dataSource_;
-  GHTestSuite *suite_;
-  
-  UIBarButtonItem *runButton_;
-  
-  // If set then we will no longer auto scroll as tests are run
-  BOOL userDidDrag_;
-  
+    GHUnitIOSView *view_;
+
+    GHUnitIOSTableViewDataSource *dataSource_;
+    GHTestSuite *suite_;
+
+    UIBarButtonItem *runButton_;
+
+    // If set then we will no longer auto scroll as tests are run
+    BOOL userDidDrag_;
+
 }
 
-@property (strong, nonatomic) GHTestSuite *suite;
+@property(strong, nonatomic) GHTestSuite *suite;
 
-- (void)reloadTest:(id<GHTest>)test;
+- (void)reloadTest:(id <GHTest>)test;
 
-- (void)scrollToTest:(id<GHTest>)test;
+- (void)scrollToTest:(id <GHTest>)test;
+
 - (void)scrollToBottom;
 
 - (void)setStatusText:(NSString *)message;
@@ -65,6 +66,7 @@
 - (void)reload;
 
 - (void)loadDefaults;
+
 - (void)saveDefaults;
 
 - (GHUnitIOSTableViewDataSource *)dataSource;

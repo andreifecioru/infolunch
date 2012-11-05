@@ -34,13 +34,14 @@
  Allows us to manually set the status code and headers in the response.
  */
 @interface GHMockNSHTTPURLResponse : NSHTTPURLResponse {
-	NSInteger statusCode_;
-	NSDictionary *headers_;
+    NSInteger statusCode_;
+    NSDictionary *headers_;
 }
 
 - (id)initWithStatusCode:(NSInteger)statusCode headers:(NSDictionary *)headers;
 
 - (void)setStatusCode:(NSInteger)code;
+
 - (void)setHeaders:(NSDictionary *)headers;
 
 @end

@@ -1,24 +1,41 @@
 #import <Foundation/Foundation.h>
 
-@protocol SignalEventsDelegate <NSObject>
--(void)onFFTComplete:(double *)data;
+@class Signal;
+@class Spectrum;
+
+@protocol SignalDelegate <NSObject>
+@optional
+- (void)onFFTComplete:(Spectrum *)spectrum;
+- (void)onSineWaveLoadSuccess;
+- (void)onSineWaveLoadError:(NSString *)errMsg;
 @end
 
 @interface Signal : NSObject {
-    __weak id <SignalEventsDelegate> delegate;
-
 @private
+    __weak id <SignalDelegate> delegate;
     double *samples;
-    UInt32 sampleCount;
-    UInt32 sampleRate;
+    NSUInteger sampleCount;
+    NSUInteger sampleRate;
+    NSURLConnection *urlConnection;
+    NSMutableData *responseData;
 }
 
-@property (weak) id <SignalEventsDelegate> delegate;
+@property(weak) id <SignalDelegate> delegate;
+@property(readonly) NSUInteger sampleCount;
+@property(readonly) NSUInteger sampleRate;
+@property(readonly, nonatomic) NSArray *samples;
+@property(readwrite, nonatomic) NSURLConnection *urlConnection;
 
-+(Signal *)createWithSineWaveOfAmplitude:(double)amplitude andFrequency:(double)frequency andSampleRate:(UInt32)sampleRate andLength:(UInt32)length;
++ (Signal *)createWithSineWaveOfAmplitude:(NSUInteger)amplitude andFrequency:(NSUInteger)frequency andSampleRate:(NSUInteger)sampleRate andLength:(NSUInteger)length;
 
--(double *)computeFFTAtPosition:(UInt32)position andWindowLength:(UInt32)windowLength;
--(void)computeFFTAsyncAtPosition:(UInt32)position andWindowLength:(UInt32)windowLength;
--(BOOL)addSignal:(Signal *)signal;
++ (Signal *)createWithSilenceUsingSampleRate:(NSUInteger)sampleRate andLength:(NSUInteger)length;
+
+- (void)loadSineWaveFromURL:(NSString *)url;
+
+- (Spectrum *)computeFFTAtPosition:(NSUInteger)position andWindowLength:(NSUInteger)windowLength;
+
+- (void)computeFFTAsyncAtPosition:(NSUInteger)position andWindowLength:(NSUInteger)windowLength;
+
+- (BOOL)addSignal:(Signal *)signal;
 
 @end

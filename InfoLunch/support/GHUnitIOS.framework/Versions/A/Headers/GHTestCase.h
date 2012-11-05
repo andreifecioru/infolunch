@@ -92,14 +92,14 @@
 
  */
 @interface GHTestCase : NSObject {
-  id<GHTestCaseLogWriter> __unsafe_unretained logWriter_; // weak
+    id <GHTestCaseLogWriter> __unsafe_unretained logWriter_; // weak
 
-  SEL currentSelector_;
+    SEL currentSelector_;
 }
 
 //! The current test selector
-@property (assign, nonatomic) SEL currentSelector; 
-@property (unsafe_unretained, nonatomic) id<GHTestCaseLogWriter> logWriter;
+@property(assign, nonatomic) SEL currentSelector;
+@property(unsafe_unretained, nonatomic) id <GHTestCaseLogWriter> logWriter;
 
 // GTM_BEGIN
 //! Run before each test method
@@ -113,7 +113,7 @@
 
  @param exception Exception that was raised by test
  */
-- (void)failWithException:(NSException*)exception;
+- (void)failWithException:(NSException *)exception;
 // GTM_END
 
 /*! 

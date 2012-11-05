@@ -31,7 +31,7 @@
 
 #import "GHTestGroup.h"
 
-@interface GHTestGroup(JUnitXML)
+@interface GHTestGroup (JUnitXML)
 
 - (NSString *)JUnitXML;
 

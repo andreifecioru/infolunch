@@ -1,15 +1,11 @@
-//
-//  AppDelegate.h
-//  InfoLunch
-//
-//  Created by Andrei Fecioru on 10/29/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
+#import "SineWave.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+    SineWave *sineWave;
+}
 
-@property (strong, nonatomic) UIWindow *window;
+@property(nonatomic, readonly) SineWave *sineWave;
+@property(strong, nonatomic) UIWindow *window;
 
 @end

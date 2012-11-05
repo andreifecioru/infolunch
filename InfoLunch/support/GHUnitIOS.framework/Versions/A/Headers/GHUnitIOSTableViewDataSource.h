@@ -34,7 +34,7 @@
  Table view data source for iOS test application.
  */
 @interface GHUnitIOSTableViewDataSource : GHTestViewModel <UITableViewDataSource> {
-  
+
 }
 
 - (GHTestNode *)nodeForIndexPath:(NSIndexPath *)indexPath;

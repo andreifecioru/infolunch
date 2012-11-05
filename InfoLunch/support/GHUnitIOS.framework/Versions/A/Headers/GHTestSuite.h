@@ -56,7 +56,8 @@ extern NSString *GHUnitTest;
     - (void)testB2; (GHTest with target GHTestCase2 + testB2)  
  
  */
-@interface GHTestSuite : GHTestGroup { }
+@interface GHTestSuite : GHTestGroup {
+}
 
 /*! 
  Create test suite with test cases.
@@ -64,7 +65,7 @@ extern NSString *GHUnitTest;
  @param testCases Array of init'ed test case classes
  @param delegate Delegate
  */
-- (id)initWithName:(NSString *)name testCases:(NSArray *)testCases delegate:(id<GHTestDelegate>)delegate;
+- (id)initWithName:(NSString *)name testCases:(NSArray *)testCases delegate:(id <GHTestDelegate>)delegate;
 
 /*!
  Creates a suite of all tests.

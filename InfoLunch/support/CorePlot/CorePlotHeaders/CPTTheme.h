@@ -14,24 +14,27 @@ extern NSString *const kCPTStocksTheme;
 @class CPTAxisSet;
 @class CPTMutableTextStyle;
 
-@interface CPTTheme : NSObject<NSCoding> {
-	@private
-	Class graphClass;
+@interface CPTTheme : NSObject <NSCoding> {
+@private
+    Class graphClass;
 }
 
-@property (nonatomic, readwrite, retain) Class graphClass;
+@property(nonatomic, readwrite, retain) Class graphClass;
 
 /// @name Theme Management
 /// @{
-+(void)registerTheme:(Class)themeClass;
-+(NSArray *)themeClasses;
-+(CPTTheme *)themeNamed:(NSString *)theme;
-+(NSString *)name;
++ (void)registerTheme:(Class)themeClass;
+
++ (NSArray *)themeClasses;
+
++ (CPTTheme *)themeNamed:(NSString *)theme;
+
++ (NSString *)name;
 /// @}
 
 /// @name Theme Usage
 /// @{
--(void)applyThemeToGraph:(CPTGraph *)graph;
+- (void)applyThemeToGraph:(CPTGraph *)graph;
 /// @}
 
 @end
@@ -39,15 +42,17 @@ extern NSString *const kCPTStocksTheme;
 /**	@category CPTTheme(AbstractMethods)
  *	@brief CPTTheme abstract methods—must be overridden by subclasses
  **/
-@interface CPTTheme(AbstractMethods)
+@interface CPTTheme (AbstractMethods)
 
 /// @name Theme Usage
 /// @{
--(id)newGraph;
+- (id)newGraph;
 
--(void)applyThemeToBackground:(CPTGraph *)graph;
--(void)applyThemeToPlotArea:(CPTPlotAreaFrame *)plotAreaFrame;
--(void)applyThemeToAxisSet:(CPTAxisSet *)axisSet;
+- (void)applyThemeToBackground:(CPTGraph *)graph;
+
+- (void)applyThemeToPlotArea:(CPTPlotAreaFrame *)plotAreaFrame;
+
+- (void)applyThemeToAxisSet:(CPTAxisSet *)axisSet;
 /// @}
 
 @end

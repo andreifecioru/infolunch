@@ -22,7 +22,7 @@ extern NSString *const CPTPlotSpaceCoordinateMappingDidChangeNotification;
 /**
  *	@brief Plot space delegate.
  **/
-@protocol CPTPlotSpaceDelegate<NSObject>
+@protocol CPTPlotSpaceDelegate <NSObject>
 
 @optional
 
@@ -36,7 +36,7 @@ extern NSString *const CPTPlotSpaceCoordinateMappingDidChangeNotification;
  *  @return YES should be returned if the gesture should be handled by the plot space, and NO to prevent handling.
  *  In either case, the delegate may choose to take extra actions, or handle the scaling itself.
  **/
--(BOOL)plotSpace:(CPTPlotSpace *)space shouldScaleBy:(CGFloat)interactionScale aboutPoint:(CGPoint)interactionPoint;
+- (BOOL)plotSpace:(CPTPlotSpace *)space shouldScaleBy:(CGFloat)interactionScale aboutPoint:(CGPoint)interactionPoint;
 
 /// @}
 
@@ -48,7 +48,7 @@ extern NSString *const CPTPlotSpaceCoordinateMappingDidChangeNotification;
  *  @param proposedDisplacementVector The proposed amount by which the plot space will shift.
  *	@return The displacement actually applied.
  **/
--(CGPoint)plotSpace:(CPTPlotSpace *)space willDisplaceBy:(CGPoint)proposedDisplacementVector;
+- (CGPoint)plotSpace:(CPTPlotSpace *)space willDisplaceBy:(CGPoint)proposedDisplacementVector;
 
 /// @}
 
@@ -61,13 +61,13 @@ extern NSString *const CPTPlotSpaceCoordinateMappingDidChangeNotification;
  *  @param coordinate The coordinate of the range.
  *	@return The new plot range to be used.
  **/
--(CPTPlotRange *)plotSpace:(CPTPlotSpace *)space willChangePlotRangeTo:(CPTPlotRange *)newRange forCoordinate:(CPTCoordinate)coordinate;
+- (CPTPlotRange *)plotSpace:(CPTPlotSpace *)space willChangePlotRangeTo:(CPTPlotRange *)newRange forCoordinate:(CPTCoordinate)coordinate;
 
 /**	@brief (Optional) Notifies that plot space has changed a plot range.
  *	@param space The plot space.
  *  @param coordinate The coordinate of the range.
  **/
--(void)plotSpace:(CPTPlotSpace *)space didChangePlotRangeForCoordinate:(CPTCoordinate)coordinate;
+- (void)plotSpace:(CPTPlotSpace *)space didChangePlotRangeForCoordinate:(CPTCoordinate)coordinate;
 
 /// @}
 
@@ -81,7 +81,7 @@ extern NSString *const CPTPlotSpaceCoordinateMappingDidChangeNotification;
  *	@return Whether the plot space should handle the event or not.
  *  In either case, the delegate may choose to take extra actions, or handle the scaling itself.
  **/
--(BOOL)plotSpace:(CPTPlotSpace *)space shouldHandlePointingDeviceDownEvent:(id)event atPoint:(CGPoint)point;
+- (BOOL)plotSpace:(CPTPlotSpace *)space shouldHandlePointingDeviceDownEvent:(id)event atPoint:(CGPoint)point;
 
 /**	@brief (Optional) Notifies that plot space intercepted a device dragged event.
  *	@param space The plot space.
@@ -90,7 +90,7 @@ extern NSString *const CPTPlotSpaceCoordinateMappingDidChangeNotification;
  *	@return Whether the plot space should handle the event or not.
  *  In either case, the delegate may choose to take extra actions, or handle the scaling itself.
  **/
--(BOOL)plotSpace:(CPTPlotSpace *)space shouldHandlePointingDeviceDraggedEvent:(id)event atPoint:(CGPoint)point;
+- (BOOL)plotSpace:(CPTPlotSpace *)space shouldHandlePointingDeviceDraggedEvent:(id)event atPoint:(CGPoint)point;
 
 /**	@brief (Optional) Notifies that plot space intercepted a device cancelled event.
  *	@param space The plot space.
@@ -98,7 +98,7 @@ extern NSString *const CPTPlotSpaceCoordinateMappingDidChangeNotification;
  *	@return Whether the plot space should handle the event or not.
  *  In either case, the delegate may choose to take extra actions, or handle the scaling itself.
  **/
--(BOOL)plotSpace:(CPTPlotSpace *)space shouldHandlePointingDeviceCancelledEvent:(id)event;
+- (BOOL)plotSpace:(CPTPlotSpace *)space shouldHandlePointingDeviceCancelledEvent:(id)event;
 
 /**	@brief (Optional) Notifies that plot space intercepted a device up event.
  *	@param space The plot space.
@@ -107,7 +107,7 @@ extern NSString *const CPTPlotSpaceCoordinateMappingDidChangeNotification;
  *	@return Whether the plot space should handle the event or not.
  *  In either case, the delegate may choose to take extra actions, or handle the scaling itself.
  **/
--(BOOL)plotSpace:(CPTPlotSpace *)space shouldHandlePointingDeviceUpEvent:(id)event atPoint:(CGPoint)point;
+- (BOOL)plotSpace:(CPTPlotSpace *)space shouldHandlePointingDeviceUpEvent:(id)event atPoint:(CGPoint)point;
 
 /// @}
 
@@ -115,18 +115,18 @@ extern NSString *const CPTPlotSpaceCoordinateMappingDidChangeNotification;
 
 #pragma mark -
 
-@interface CPTPlotSpace : NSObject<CPTResponder, NSCoding> {
-	@private
-	__cpt_weak CPTGraph *graph;
-	id<NSCopying, NSCoding, NSObject> identifier;
-	__cpt_weak id<CPTPlotSpaceDelegate> delegate;
-	BOOL allowsUserInteraction;
+@interface CPTPlotSpace : NSObject <CPTResponder, NSCoding> {
+@private
+    __cpt_weak CPTGraph *graph;
+    id <NSCopying, NSCoding, NSObject> identifier;
+    __cpt_weak id <CPTPlotSpaceDelegate> delegate;
+    BOOL allowsUserInteraction;
 }
 
-@property (nonatomic, readwrite, copy) id<NSCopying, NSCoding, NSObject> identifier;
-@property (nonatomic, readwrite, assign) BOOL allowsUserInteraction;
-@property (nonatomic, readwrite, cpt_weak_property) __cpt_weak CPTGraph *graph;
-@property (nonatomic, readwrite, cpt_weak_property) __cpt_weak id<CPTPlotSpaceDelegate> delegate;
+@property(nonatomic, readwrite, copy) id <NSCopying, NSCoding, NSObject> identifier;
+@property(nonatomic, readwrite, assign) BOOL allowsUserInteraction;
+@property(nonatomic, readwrite, cpt_weak_property) __cpt_weak CPTGraph *graph;
+@property(nonatomic, readwrite, cpt_weak_property) __cpt_weak id <CPTPlotSpaceDelegate> delegate;
 
 @end
 
@@ -135,32 +135,38 @@ extern NSString *const CPTPlotSpaceCoordinateMappingDidChangeNotification;
 /**	@category CPTPlotSpace(AbstractMethods)
  *	@brief CPTPlotSpace abstract methods—must be overridden by subclasses
  **/
-@interface CPTPlotSpace(AbstractMethods)
+@interface CPTPlotSpace (AbstractMethods)
 
 /// @name Coordinate Space Conversions
 /// @{
--(CGPoint)plotAreaViewPointForPlotPoint:(NSDecimal *)plotPoint;
--(CGPoint)plotAreaViewPointForDoublePrecisionPlotPoint:(double *)plotPoint;
--(void)plotPoint:(NSDecimal *)plotPoint forPlotAreaViewPoint:(CGPoint)point;
--(void)doublePrecisionPlotPoint:(double *)plotPoint forPlotAreaViewPoint:(CGPoint)point;
+- (CGPoint)plotAreaViewPointForPlotPoint:(NSDecimal *)plotPoint;
+
+- (CGPoint)plotAreaViewPointForDoublePrecisionPlotPoint:(double *)plotPoint;
+
+- (void)plotPoint:(NSDecimal *)plotPoint forPlotAreaViewPoint:(CGPoint)point;
+
+- (void)doublePrecisionPlotPoint:(double *)plotPoint forPlotAreaViewPoint:(CGPoint)point;
 ///	@}
 
 /// @name Coordinate Range
 /// @{
--(void)setPlotRange:(CPTPlotRange *)newRange forCoordinate:(CPTCoordinate)coordinate;
--(CPTPlotRange *)plotRangeForCoordinate:(CPTCoordinate)coordinate;
+- (void)setPlotRange:(CPTPlotRange *)newRange forCoordinate:(CPTCoordinate)coordinate;
+
+- (CPTPlotRange *)plotRangeForCoordinate:(CPTCoordinate)coordinate;
 ///	@}
 
 /// @name Scale Types
 /// @{
--(void)setScaleType:(CPTScaleType)newType forCoordinate:(CPTCoordinate)coordinate;
--(CPTScaleType)scaleTypeForCoordinate:(CPTCoordinate)coordinate;
+- (void)setScaleType:(CPTScaleType)newType forCoordinate:(CPTCoordinate)coordinate;
+
+- (CPTScaleType)scaleTypeForCoordinate:(CPTCoordinate)coordinate;
 ///	@}
 
 /// @name Adjusting Ranges
 /// @{
--(void)scaleToFitPlots:(NSArray *)plots;
--(void)scaleBy:(CGFloat)interactionScale aboutPoint:(CGPoint)interactionPoint;
+- (void)scaleToFitPlots:(NSArray *)plots;
+
+- (void)scaleBy:(CGFloat)interactionScale aboutPoint:(CGPoint)interactionPoint;
 ///	@}
 
 @end

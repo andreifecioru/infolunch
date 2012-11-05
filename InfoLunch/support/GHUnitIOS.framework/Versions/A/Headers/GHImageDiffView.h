@@ -30,12 +30,12 @@
 #import <UIKit/UIKit.h>
 
 @interface GHImageDiffView : UIView {
-  UIScrollView *scrollView_;
-  UISegmentedControl *segmentedControl_;
+    UIScrollView *scrollView_;
+    UISegmentedControl *segmentedControl_;
 
-  UIImageView *savedImageView_;
-  UIImageView *renderedImageView_;
-  UIImageView *diffImageView_;
+    UIImageView *savedImageView_;
+    UIImageView *renderedImageView_;
+    UIImageView *diffImageView_;
 }
 
 - (void)setSavedImage:(UIImage *)savedImage renderedImage:(UIImage *)renderedImage diffImage:(UIImage *)diffImage;

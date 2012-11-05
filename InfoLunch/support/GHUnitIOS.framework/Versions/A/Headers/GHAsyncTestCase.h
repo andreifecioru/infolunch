@@ -33,10 +33,10 @@
  Common wait statuses to use with waitForStatus:timeout:.
  */
 enum {
-  kGHUnitWaitStatusUnknown = 0, // Unknown wait status
-  kGHUnitWaitStatusSuccess, // Wait status success
-  kGHUnitWaitStatusFailure, // Wait status failure
-  kGHUnitWaitStatusCancelled // Wait status cancelled
+    kGHUnitWaitStatusUnknown = 0, // Unknown wait status
+    kGHUnitWaitStatusSuccess, // Wait status success
+    kGHUnitWaitStatusFailure, // Wait status failure
+    kGHUnitWaitStatusCancelled // Wait status cancelled
 };
 
 /*!
@@ -75,21 +75,21 @@ enum {
  */
 @interface GHAsyncTestCase : GHTestCase {
 
-  NSInteger waitForStatus_;
-  NSInteger notifiedStatus_;
-  
-  BOOL prepared_; // Whether prepared was called before waitForStatus:timeout:
-  NSRecursiveLock *lock_; // Lock to synchronize on
-  SEL waitSelector_; // The selector we are waiting on
-    
-  NSArray *_runLoopModes;
+    NSInteger waitForStatus_;
+    NSInteger notifiedStatus_;
+
+    BOOL prepared_; // Whether prepared was called before waitForStatus:timeout:
+    NSRecursiveLock *lock_; // Lock to synchronize on
+    SEL waitSelector_; // The selector we are waiting on
+
+    NSArray *_runLoopModes;
 }
 
 /*!
  Run loop modes to run while waiting; 
  Defaults to NSDefaultRunLoopMode, NSRunLoopCommonModes, NSConnectionReplyMode
  */
-@property (strong, nonatomic) NSArray *runLoopModes; 
+@property(strong, nonatomic) NSArray *runLoopModes;
 
 /*!
  Prepare before calling the asynchronous method. 

@@ -7,17 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		220B905751A0C2A0F0ECC1FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220B9108AB213BA34A35CBA3 /* ViewController.m */; };
+		220B905751A0C2A0F0ECC1FE /* SpectrumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220B9108AB213BA34A35CBA3 /* SpectrumViewController.m */; };
 		220B909BB999DB75EEF79C77 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220B97DE6761F5F81A57ECBD /* MainStoryboard_iPad.storyboard */; };
 		220B91A2BBF25000EFA5A928 /* Signal.m in Sources */ = {isa = PBXBuildFile; fileRef = 220B9168CE4DFA4A373A8AD9 /* Signal.m */; };
 		220B91CD360E818F666B5020 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 220B9F06B05AF1071E03C211 /* main.m */; };
 		220B9345F42DB6323BED21C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 220B9FED38B726429FBB3B7A /* AppDelegate.m */; };
+		220B934FFF4367CF68C3A7E5 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 220B96935BA2CE3A3D09DBA9 /* libOCMock.a */; };
 		220B95171B6777BC318B6194 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220B920FDA865D7E3A72E6A1 /* Foundation.framework */; };
 		220B9566B7D23CBD14BCCEF6 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 220B907037C627A94942BBFE /* libCorePlot-CocoaTouch.a */; };
+		220B97A34CDA751EA347467B /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220B9DD5130D21231C6705A6 /* OCHamcrestIOS.framework */; };
 		220B988895CBE2DDAC61D2D1 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220B9856E4398462845DD74D /* MainStoryboard_iPhone.storyboard */; };
+		220B9A22B3E77FA4E5F3EF39 /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220B9557CA7E1113F7701D73 /* TimeViewController.m */; };
 		220B9A26ADD43B15198ED072 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 220B967BB0C8E76CBC627E37 /* Default-568h@2x.png */; };
+		220B9AFF260A23B76AB42272 /* Spectrum.m in Sources */ = {isa = PBXBuildFile; fileRef = 220B98D5BEB39B663F10423F /* Spectrum.m */; };
 		220B9B08A2D73D451AA47736 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220B9D2FC945CC4251B1A5D7 /* CoreGraphics.framework */; };
+		220B9B9B09AA859EF4998A71 /* TestOfflineToneGenerationFromURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 220B9CF8BF9B79D78820F291 /* TestOfflineToneGenerationFromURL.m */; };
+		220B9BA69CB69CCC80126270 /* Spectrum.m in Sources */ = {isa = PBXBuildFile; fileRef = 220B98D5BEB39B663F10423F /* Spectrum.m */; };
 		220B9C0C381EEC7A55DD94A6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 220B9787A5CF70B813123EDB /* Default.png */; };
+		220B9E0E05593EA86133B2FE /* SineWave.m in Sources */ = {isa = PBXBuildFile; fileRef = 220B98797F6DE1FC8B935FFC /* SineWave.m */; };
 		220B9ED3BEE48F2E05B1CC78 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 220B925D1A50A05480737BF5 /* InfoPlist.strings */; };
 		220B9ED5ABEE009F50433643 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220B9EF1D54282C400B51C47 /* UIKit.framework */; };
 		220B9F0B514D61EBD470B9A1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 220B969C37EE3DC6EF47AC2D /* Default@2x.png */; };
@@ -32,31 +39,76 @@
 		C95DA1F7163EEB3A00D8C069 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C95DA1F6163EEB3A00D8C069 /* Default-568h@2x.png */; };
 		C95DA1FB163EEBA000D8C069 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220B9A8E36233630378E34C8 /* GHUnitIOS.framework */; };
 		C95DA202163EEC0300D8C069 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220B91D83A387FEEB8B021BF /* QuartzCore.framework */; };
+		C9634C3816476ECB00DA400B /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = C9634C2016476ECB00DA400B /* NSObject+SBJson.m */; };
+		C9634C3916476ECB00DA400B /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = C9634C2016476ECB00DA400B /* NSObject+SBJson.m */; };
+		C9634C3A16476ECB00DA400B /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C9634C2316476ECB00DA400B /* SBJsonParser.m */; };
+		C9634C3B16476ECB00DA400B /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C9634C2316476ECB00DA400B /* SBJsonParser.m */; };
+		C9634C3C16476ECB00DA400B /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C9634C2516476ECB00DA400B /* SBJsonStreamParser.m */; };
+		C9634C3D16476ECB00DA400B /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C9634C2516476ECB00DA400B /* SBJsonStreamParser.m */; };
+		C9634C3E16476ECB00DA400B /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = C9634C2716476ECB00DA400B /* SBJsonStreamParserAccumulator.m */; };
+		C9634C3F16476ECB00DA400B /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = C9634C2716476ECB00DA400B /* SBJsonStreamParserAccumulator.m */; };
+		C9634C4016476ECB00DA400B /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9634C2916476ECB00DA400B /* SBJsonStreamParserAdapter.m */; };
+		C9634C4116476ECB00DA400B /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9634C2916476ECB00DA400B /* SBJsonStreamParserAdapter.m */; };
+		C9634C4216476ECB00DA400B /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = C9634C2B16476ECB00DA400B /* SBJsonStreamParserState.m */; };
+		C9634C4316476ECB00DA400B /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = C9634C2B16476ECB00DA400B /* SBJsonStreamParserState.m */; };
+		C9634C4416476ECB00DA400B /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9634C2D16476ECB00DA400B /* SBJsonStreamWriter.m */; };
+		C9634C4516476ECB00DA400B /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9634C2D16476ECB00DA400B /* SBJsonStreamWriter.m */; };
+		C9634C4616476ECB00DA400B /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = C9634C2F16476ECB00DA400B /* SBJsonStreamWriterAccumulator.m */; };
+		C9634C4716476ECB00DA400B /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = C9634C2F16476ECB00DA400B /* SBJsonStreamWriterAccumulator.m */; };
+		C9634C4816476ECB00DA400B /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = C9634C3116476ECB00DA400B /* SBJsonStreamWriterState.m */; };
+		C9634C4916476ECB00DA400B /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = C9634C3116476ECB00DA400B /* SBJsonStreamWriterState.m */; };
+		C9634C4A16476ECB00DA400B /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = C9634C3316476ECB00DA400B /* SBJsonTokeniser.m */; };
+		C9634C4B16476ECB00DA400B /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = C9634C3316476ECB00DA400B /* SBJsonTokeniser.m */; };
+		C9634C4C16476ECB00DA400B /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = C9634C3516476ECB00DA400B /* SBJsonUTF8Stream.m */; };
+		C9634C4D16476ECB00DA400B /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = C9634C3516476ECB00DA400B /* SBJsonUTF8Stream.m */; };
+		C9634C4E16476ECB00DA400B /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9634C3716476ECB00DA400B /* SBJsonWriter.m */; };
+		C9634C4F16476ECB00DA400B /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9634C3716476ECB00DA400B /* SBJsonWriter.m */; };
+		C9B9171916465380001F155F /* Signal.m in Sources */ = {isa = PBXBuildFile; fileRef = 220B9168CE4DFA4A373A8AD9 /* Signal.m */; };
+		C9D1649D1647B2D4007AC9B4 /* TestOnlineToneGenerationFromURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 220B98ED945DE7341FD09927 /* TestOnlineToneGenerationFromURL.m */; };
+		C9D1649E1647B2D7007AC9B4 /* TestOfflineSilenceGeneration.m in Sources */ = {isa = PBXBuildFile; fileRef = 220B9160FE2CF6F9EC9C3107 /* TestOfflineSilenceGeneration.m */; };
+		C9D1649F1647B2DA007AC9B4 /* TestOfflineToneGeneration.m in Sources */ = {isa = PBXBuildFile; fileRef = 220B93367173190E0C89D8F5 /* TestOfflineToneGeneration.m */; };
+		C9D164A01647B2DD007AC9B4 /* TestOfflineFFTComputation.m in Sources */ = {isa = PBXBuildFile; fileRef = 220B9121D006B8285FB573C9 /* TestOfflineFFTComputation.m */; };
+		C9D164A11647B2E0007AC9B4 /* TestOfflineFFTComputationAsync.m in Sources */ = {isa = PBXBuildFile; fileRef = 220B960588E98A4A15F5C08F /* TestOfflineFFTComputationAsync.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		220B907037C627A94942BBFE /* libCorePlot-CocoaTouch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libCorePlot-CocoaTouch.a"; path = "/Users/afecioru/Work/git/infolunch/InfoLunch/support/CorePlot/libCorePlot-CocoaTouch.a"; sourceTree = "<absolute>"; };
-		220B9108AB213BA34A35CBA3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		220B90F49356F05F2989A639 /* Spectrum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spectrum.h; sourceTree = "<group>"; };
+		220B9108AB213BA34A35CBA3 /* SpectrumViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectrumViewController.m; sourceTree = "<group>"; };
 		220B9114E9BEDE282324DE5A /* InfoLunch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "InfoLunch-Info.plist"; sourceTree = "<group>"; };
+		220B9121D006B8285FB573C9 /* TestOfflineFFTComputation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOfflineFFTComputation.m; sourceTree = "<group>"; };
+		220B9160FE2CF6F9EC9C3107 /* TestOfflineSilenceGeneration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOfflineSilenceGeneration.m; sourceTree = "<group>"; };
 		220B9168CE4DFA4A373A8AD9 /* Signal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Signal.m; sourceTree = "<group>"; };
 		220B91D83A387FEEB8B021BF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		220B920FDA865D7E3A72E6A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		220B93367173190E0C89D8F5 /* TestOfflineToneGeneration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOfflineToneGeneration.m; sourceTree = "<group>"; };
 		220B94EF8118C1E374CBA862 /* InfoLunch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InfoLunch-Prefix.pch"; sourceTree = "<group>"; };
 		220B954378A3CBC15A19B9D0 /* InfoLunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfoLunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		220B9557CA7E1113F7701D73 /* TimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeViewController.m; sourceTree = "<group>"; };
+		220B960588E98A4A15F5C08F /* TestOfflineFFTComputationAsync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOfflineFFTComputationAsync.m; sourceTree = "<group>"; };
 		220B967BB0C8E76CBC627E37 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		220B96935BA2CE3A3D09DBA9 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = /Users/afecioru/Work/git/infolunch/InfoLunch/support/OCMock/libOCMock.a; sourceTree = "<absolute>"; };
 		220B969C37EE3DC6EF47AC2D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		220B9787A5CF70B813123EDB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		220B9846811CEB4EA96E7C3C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		220B9846811CEB4EA96E7C3C /* SpectrumViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectrumViewController.h; sourceTree = "<group>"; };
+		220B98797F6DE1FC8B935FFC /* SineWave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SineWave.m; sourceTree = "<group>"; };
+		220B98D5BEB39B663F10423F /* Spectrum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Spectrum.m; sourceTree = "<group>"; };
+		220B98ED945DE7341FD09927 /* TestOnlineToneGenerationFromURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOnlineToneGenerationFromURL.m; sourceTree = "<group>"; };
 		220B9A8E36233630378E34C8 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = /Users/afecioru/Work/git/infolunch/InfoLunch/support/GHUnitIOS.framework; sourceTree = "<absolute>"; };
 		220B9B1BB2029424FBFB6339 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		220B9BD1476407E2F094AE1C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		220B9CF8BF9B79D78820F291 /* TestOfflineToneGenerationFromURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOfflineToneGenerationFromURL.m; sourceTree = "<group>"; };
 		220B9D2FC945CC4251B1A5D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		220B9DD5130D21231C6705A6 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrestIOS.framework; path = /Users/afecioru/Work/git/infolunch/InfoLunch/support/OCHamcrestIOS.framework; sourceTree = "<absolute>"; };
 		220B9E467FB467DD4F1093E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		220B9ED353286ACDC450EE68 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		220B9EDF9D74C66DCD9A79CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		220B9EF1D54282C400B51C47 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		220B9F06B05AF1071E03C211 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		220B9F09928CC98F70D3DF73 /* TimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeViewController.h; sourceTree = "<group>"; };
+		220B9F109EBBDBE951AF8649 /* SineWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SineWave.h; sourceTree = "<group>"; };
 		220B9F166DDB672DAF033646 /* Signal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Signal.h; sourceTree = "<group>"; };
+		220B9FD68AB4F7532BD4E2DA /* TestTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTemplate.m; sourceTree = "<group>"; };
 		220B9FED38B726429FBB3B7A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C95DA1E1163EEB3A00D8C069 /* InfoLunchTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfoLunchTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95DA1E8163EEB3A00D8C069 /* InfoLunchTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InfoLunchTest-Info.plist"; sourceTree = "<group>"; };
@@ -66,6 +118,31 @@
 		C95DA1F2163EEB3A00D8C069 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		C95DA1F4163EEB3A00D8C069 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		C95DA1F6163EEB3A00D8C069 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C9634C1F16476ECB00DA400B /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SBJson.h"; path = "support/JsonParser/NSObject+SBJson.h"; sourceTree = "<group>"; };
+		C9634C2016476ECB00DA400B /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SBJson.m"; path = "support/JsonParser/NSObject+SBJson.m"; sourceTree = "<group>"; };
+		C9634C2116476ECB00DA400B /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJson.h; path = support/JsonParser/SBJson.h; sourceTree = "<group>"; };
+		C9634C2216476ECB00DA400B /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonParser.h; path = support/JsonParser/SBJsonParser.h; sourceTree = "<group>"; };
+		C9634C2316476ECB00DA400B /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = support/JsonParser/SBJsonParser.m; sourceTree = "<group>"; };
+		C9634C2416476ECB00DA400B /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParser.h; path = support/JsonParser/SBJsonStreamParser.h; sourceTree = "<group>"; };
+		C9634C2516476ECB00DA400B /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParser.m; path = support/JsonParser/SBJsonStreamParser.m; sourceTree = "<group>"; };
+		C9634C2616476ECB00DA400B /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserAccumulator.h; path = support/JsonParser/SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		C9634C2716476ECB00DA400B /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserAccumulator.m; path = support/JsonParser/SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		C9634C2816476ECB00DA400B /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserAdapter.h; path = support/JsonParser/SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		C9634C2916476ECB00DA400B /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserAdapter.m; path = support/JsonParser/SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		C9634C2A16476ECB00DA400B /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserState.h; path = support/JsonParser/SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		C9634C2B16476ECB00DA400B /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserState.m; path = support/JsonParser/SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		C9634C2C16476ECB00DA400B /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriter.h; path = support/JsonParser/SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		C9634C2D16476ECB00DA400B /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriter.m; path = support/JsonParser/SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		C9634C2E16476ECB00DA400B /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriterAccumulator.h; path = support/JsonParser/SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		C9634C2F16476ECB00DA400B /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriterAccumulator.m; path = support/JsonParser/SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		C9634C3016476ECB00DA400B /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriterState.h; path = support/JsonParser/SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		C9634C3116476ECB00DA400B /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriterState.m; path = support/JsonParser/SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		C9634C3216476ECB00DA400B /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonTokeniser.h; path = support/JsonParser/SBJsonTokeniser.h; sourceTree = "<group>"; };
+		C9634C3316476ECB00DA400B /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonTokeniser.m; path = support/JsonParser/SBJsonTokeniser.m; sourceTree = "<group>"; };
+		C9634C3416476ECB00DA400B /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonUTF8Stream.h; path = support/JsonParser/SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		C9634C3516476ECB00DA400B /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonUTF8Stream.m; path = support/JsonParser/SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		C9634C3616476ECB00DA400B /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = support/JsonParser/SBJsonWriter.h; sourceTree = "<group>"; };
+		C9634C3716476ECB00DA400B /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = support/JsonParser/SBJsonWriter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +167,8 @@
 				C95DA1E5163EEB3A00D8C069 /* CoreGraphics.framework in Frameworks */,
 				C95DA1FB163EEBA000D8C069 /* GHUnitIOS.framework in Frameworks */,
 				C95DA202163EEC0300D8C069 /* QuartzCore.framework in Frameworks */,
+				220B97A34CDA751EA347467B /* OCHamcrestIOS.framework in Frameworks */,
+				220B934FFF4367CF68C3A7E5 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +189,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		220B90BD1E5DC098E79898B6 /* offline */ = {
+			isa = PBXGroup;
+			children = (
+				220B9160FE2CF6F9EC9C3107 /* TestOfflineSilenceGeneration.m */,
+				220B93367173190E0C89D8F5 /* TestOfflineToneGeneration.m */,
+				220B9121D006B8285FB573C9 /* TestOfflineFFTComputation.m */,
+				220B960588E98A4A15F5C08F /* TestOfflineFFTComputationAsync.m */,
+				220B9CF8BF9B79D78820F291 /* TestOfflineToneGenerationFromURL.m */,
+			);
+			path = offline;
+			sourceTree = "<group>";
+		};
 		220B910DC8F562773149E85D /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +213,7 @@
 		220B95E4C29C90ECAC3B3060 = {
 			isa = PBXGroup;
 			children = (
+				C9634C1C16476EAB00DA400B /* external */,
 				C95DA1E6163EEB3A00D8C069 /* InfoLunchTest */,
 				220B910DC8F562773149E85D /* Products */,
 				220B97706246D189F91DE4A8 /* Frameworks */,
@@ -132,16 +224,28 @@
 		220B96042CD3784F1BA612F7 /* InfoLunch */ = {
 			isa = PBXGroup;
 			children = (
+				220B98EE2C40027D705C897A /* dsp */,
 				220B903BF9817C1C2F6BCE19 /* Supporting Files */,
 				220B9B1BB2029424FBFB6339 /* AppDelegate.h */,
 				220B9FED38B726429FBB3B7A /* AppDelegate.m */,
 				220B9856E4398462845DD74D /* MainStoryboard_iPhone.storyboard */,
 				220B97DE6761F5F81A57ECBD /* MainStoryboard_iPad.storyboard */,
-				220B9846811CEB4EA96E7C3C /* ViewController.h */,
-				220B9108AB213BA34A35CBA3 /* ViewController.m */,
-				220B98EE2C40027D705C897A /* dsp */,
+				220B9846811CEB4EA96E7C3C /* SpectrumViewController.h */,
+				220B9108AB213BA34A35CBA3 /* SpectrumViewController.m */,
+				220B9557CA7E1113F7701D73 /* TimeViewController.m */,
+				220B9F09928CC98F70D3DF73 /* TimeViewController.h */,
+				220B9F109EBBDBE951AF8649 /* SineWave.h */,
+				220B98797F6DE1FC8B935FFC /* SineWave.m */,
 			);
 			path = InfoLunch;
+			sourceTree = "<group>";
+		};
+		220B9613F7152CD3D66A18F0 /* online */ = {
+			isa = PBXGroup;
+			children = (
+				220B98ED945DE7341FD09927 /* TestOnlineToneGenerationFromURL.m */,
+			);
+			path = online;
 			sourceTree = "<group>";
 		};
 		220B97706246D189F91DE4A8 /* Frameworks */ = {
@@ -154,6 +258,8 @@
 				220B9A8E36233630378E34C8 /* GHUnitIOS.framework */,
 				220B91D83A387FEEB8B021BF /* QuartzCore.framework */,
 				220B907037C627A94942BBFE /* libCorePlot-CocoaTouch.a */,
+				220B9DD5130D21231C6705A6 /* OCHamcrestIOS.framework */,
+				220B96935BA2CE3A3D09DBA9 /* libOCMock.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -163,6 +269,8 @@
 			children = (
 				220B9168CE4DFA4A373A8AD9 /* Signal.m */,
 				220B9F166DDB672DAF033646 /* Signal.h */,
+				220B98D5BEB39B663F10423F /* Spectrum.m */,
+				220B90F49356F05F2989A639 /* Spectrum.h */,
 			);
 			path = dsp;
 			sourceTree = "<group>";
@@ -171,6 +279,9 @@
 			isa = PBXGroup;
 			children = (
 				C95DA1E7163EEB3A00D8C069 /* Supporting Files */,
+				220B9613F7152CD3D66A18F0 /* online */,
+				220B90BD1E5DC098E79898B6 /* offline */,
+				220B9FD68AB4F7532BD4E2DA /* TestTemplate.m */,
 			);
 			path = InfoLunchTest;
 			sourceTree = "<group>";
@@ -187,6 +298,46 @@
 				C95DA1F6163EEB3A00D8C069 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9634C1C16476EAB00DA400B /* external */ = {
+			isa = PBXGroup;
+			children = (
+				C9634C1E16476EB600DA400B /* json parser */,
+			);
+			name = external;
+			sourceTree = "<group>";
+		};
+		C9634C1E16476EB600DA400B /* json parser */ = {
+			isa = PBXGroup;
+			children = (
+				C9634C1F16476ECB00DA400B /* NSObject+SBJson.h */,
+				C9634C2016476ECB00DA400B /* NSObject+SBJson.m */,
+				C9634C2116476ECB00DA400B /* SBJson.h */,
+				C9634C2216476ECB00DA400B /* SBJsonParser.h */,
+				C9634C2316476ECB00DA400B /* SBJsonParser.m */,
+				C9634C2416476ECB00DA400B /* SBJsonStreamParser.h */,
+				C9634C2516476ECB00DA400B /* SBJsonStreamParser.m */,
+				C9634C2616476ECB00DA400B /* SBJsonStreamParserAccumulator.h */,
+				C9634C2716476ECB00DA400B /* SBJsonStreamParserAccumulator.m */,
+				C9634C2816476ECB00DA400B /* SBJsonStreamParserAdapter.h */,
+				C9634C2916476ECB00DA400B /* SBJsonStreamParserAdapter.m */,
+				C9634C2A16476ECB00DA400B /* SBJsonStreamParserState.h */,
+				C9634C2B16476ECB00DA400B /* SBJsonStreamParserState.m */,
+				C9634C2C16476ECB00DA400B /* SBJsonStreamWriter.h */,
+				C9634C2D16476ECB00DA400B /* SBJsonStreamWriter.m */,
+				C9634C2E16476ECB00DA400B /* SBJsonStreamWriterAccumulator.h */,
+				C9634C2F16476ECB00DA400B /* SBJsonStreamWriterAccumulator.m */,
+				C9634C3016476ECB00DA400B /* SBJsonStreamWriterState.h */,
+				C9634C3116476ECB00DA400B /* SBJsonStreamWriterState.m */,
+				C9634C3216476ECB00DA400B /* SBJsonTokeniser.h */,
+				C9634C3316476ECB00DA400B /* SBJsonTokeniser.m */,
+				C9634C3416476ECB00DA400B /* SBJsonUTF8Stream.h */,
+				C9634C3516476ECB00DA400B /* SBJsonUTF8Stream.m */,
+				C9634C3616476ECB00DA400B /* SBJsonWriter.h */,
+				C9634C3716476ECB00DA400B /* SBJsonWriter.m */,
+			);
+			name = "json parser";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,8 +434,23 @@
 			files = (
 				220B91CD360E818F666B5020 /* main.m in Sources */,
 				220B9345F42DB6323BED21C5 /* AppDelegate.m in Sources */,
-				220B905751A0C2A0F0ECC1FE /* ViewController.m in Sources */,
+				220B905751A0C2A0F0ECC1FE /* SpectrumViewController.m in Sources */,
 				220B91A2BBF25000EFA5A928 /* Signal.m in Sources */,
+				220B9A22B3E77FA4E5F3EF39 /* TimeViewController.m in Sources */,
+				220B9E0E05593EA86133B2FE /* SineWave.m in Sources */,
+				220B9AFF260A23B76AB42272 /* Spectrum.m in Sources */,
+				C9634C3816476ECB00DA400B /* NSObject+SBJson.m in Sources */,
+				C9634C3A16476ECB00DA400B /* SBJsonParser.m in Sources */,
+				C9634C3C16476ECB00DA400B /* SBJsonStreamParser.m in Sources */,
+				C9634C3E16476ECB00DA400B /* SBJsonStreamParserAccumulator.m in Sources */,
+				C9634C4016476ECB00DA400B /* SBJsonStreamParserAdapter.m in Sources */,
+				C9634C4216476ECB00DA400B /* SBJsonStreamParserState.m in Sources */,
+				C9634C4416476ECB00DA400B /* SBJsonStreamWriter.m in Sources */,
+				C9634C4616476ECB00DA400B /* SBJsonStreamWriterAccumulator.m in Sources */,
+				C9634C4816476ECB00DA400B /* SBJsonStreamWriterState.m in Sources */,
+				C9634C4A16476ECB00DA400B /* SBJsonTokeniser.m in Sources */,
+				C9634C4C16476ECB00DA400B /* SBJsonUTF8Stream.m in Sources */,
+				C9634C4E16476ECB00DA400B /* SBJsonWriter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +459,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				C95DA1ED163EEB3A00D8C069 /* main.m in Sources */,
+				C9B9171916465380001F155F /* Signal.m in Sources */,
+				220B9BA69CB69CCC80126270 /* Spectrum.m in Sources */,
+				C9634C3916476ECB00DA400B /* NSObject+SBJson.m in Sources */,
+				C9634C3B16476ECB00DA400B /* SBJsonParser.m in Sources */,
+				C9634C3D16476ECB00DA400B /* SBJsonStreamParser.m in Sources */,
+				C9634C3F16476ECB00DA400B /* SBJsonStreamParserAccumulator.m in Sources */,
+				C9634C4116476ECB00DA400B /* SBJsonStreamParserAdapter.m in Sources */,
+				C9634C4316476ECB00DA400B /* SBJsonStreamParserState.m in Sources */,
+				C9634C4516476ECB00DA400B /* SBJsonStreamWriter.m in Sources */,
+				C9634C4716476ECB00DA400B /* SBJsonStreamWriterAccumulator.m in Sources */,
+				C9634C4916476ECB00DA400B /* SBJsonStreamWriterState.m in Sources */,
+				C9634C4B16476ECB00DA400B /* SBJsonTokeniser.m in Sources */,
+				C9634C4D16476ECB00DA400B /* SBJsonUTF8Stream.m in Sources */,
+				C9634C4F16476ECB00DA400B /* SBJsonWriter.m in Sources */,
+				220B9B9B09AA859EF4998A71 /* TestOfflineToneGenerationFromURL.m in Sources */,
+				C9D1649D1647B2D4007AC9B4 /* TestOnlineToneGenerationFromURL.m in Sources */,
+				C9D1649E1647B2D7007AC9B4 /* TestOfflineSilenceGeneration.m in Sources */,
+				C9D1649F1647B2DA007AC9B4 /* TestOfflineToneGeneration.m in Sources */,
+				C9D164A01647B2DD007AC9B4 /* TestOfflineFFTComputation.m in Sources */,
+				C9D164A11647B2E0007AC9B4 /* TestOfflineFFTComputationAsync.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +529,10 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InfoLunch/InfoLunch-Prefix.pch";
-				HEADER_SEARCH_PATHS = /Users/afecioru/Work/git/infolunch/InfoLunch/support/CorePlot/CorePlotHeaders;
+				HEADER_SEARCH_PATHS = (
+					/Users/afecioru/Work/git/infolunch/InfoLunch/support/CorePlot/CorePlotHeaders,
+					/Users/afecioru/Work/git/infolunch/InfoLunch/support/JsonParser,
+				);
 				INFOPLIST_FILE = "InfoLunch/InfoLunch-Info.plist";
 				LIBRARY_SEARCH_PATHS = /Users/afecioru/Work/git/infolunch/InfoLunch/support/CorePlot;
 				OTHER_LDFLAGS = (
@@ -416,7 +605,10 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InfoLunch/InfoLunch-Prefix.pch";
-				HEADER_SEARCH_PATHS = /Users/afecioru/Work/git/infolunch/InfoLunch/support/CorePlot/CorePlotHeaders;
+				HEADER_SEARCH_PATHS = (
+					/Users/afecioru/Work/git/infolunch/InfoLunch/support/CorePlot/CorePlotHeaders,
+					/Users/afecioru/Work/git/infolunch/InfoLunch/support/JsonParser,
+				);
 				INFOPLIST_FILE = "InfoLunch/InfoLunch-Info.plist";
 				LIBRARY_SEARCH_PATHS = /Users/afecioru/Work/git/infolunch/InfoLunch/support/CorePlot;
 				OTHER_LDFLAGS = (
@@ -435,13 +627,22 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/support\"",
+					"\"${PROJECT_DIR}/support\"/**",
+					"\"${PROJECT_DIR}/support/OCMock\"/**",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InfoLunchTest/InfoLunchTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/support/OCMock\"",
+					"\"$(SRCROOT)/support/JsonParser\"",
+				);
 				INFOPLIST_FILE = "InfoLunchTest/InfoLunchTest-Info.plist";
+				LIBRARY_SEARCH_PATHS = /Users/afecioru/Work/git/infolunch/InfoLunch/support/OCMock;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
+					"-force_load",
+					"\"$(SRCROOT)/support/OCMock/libOCMock.a\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -455,13 +656,22 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/support\"",
+					"\"${PROJECT_DIR}/support\"/**",
+					"\"${PROJECT_DIR}/support/OCMock\"/**",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InfoLunchTest/InfoLunchTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/support/OCMock\"",
+					"\"$(SRCROOT)/support/JsonParser\"",
+				);
 				INFOPLIST_FILE = "InfoLunchTest/InfoLunchTest-Info.plist";
+				LIBRARY_SEARCH_PATHS = /Users/afecioru/Work/git/infolunch/InfoLunch/support/OCMock;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
+					"-force_load",
+					"\"$(SRCROOT)/support/OCMock/libOCMock.a\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
