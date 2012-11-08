@@ -657,15 +657,10 @@
 				);
 				INFOPLIST_FILE = "InfoLunchTest/InfoLunchTest-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				LIBRARY_SEARCH_PATHS = (
-					"\"/Users/afecioru/Work/git/infolunch/InfoLunch/support/OCMock\"",
-					"\"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/\"/**",
-				);
+				LIBRARY_SEARCH_PATHS = "\"/Users/afecioru/Work/git/infolunch/InfoLunch/support/OCMock\"";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
-					"-force_load",
-					"\"$(SRCROOT)/support/OCMock/libOCMock.a\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -690,15 +685,10 @@
 				);
 				INFOPLIST_FILE = "InfoLunchTest/InfoLunchTest-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				LIBRARY_SEARCH_PATHS = (
-					"\"/Users/afecioru/Work/git/infolunch/InfoLunch/support/OCMock\"",
-					"\"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/\"/**",
-				);
+				LIBRARY_SEARCH_PATHS = "\"/Users/afecioru/Work/git/infolunch/InfoLunch/support/OCMock\"";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
-					"-force_load",
-					"\"$(SRCROOT)/support/OCMock/libOCMock.a\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
