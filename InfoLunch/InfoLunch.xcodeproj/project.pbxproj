@@ -68,6 +68,7 @@
 		C9D1649F1647B2DA007AC9B4 /* TestOfflineToneGeneration.m in Sources */ = {isa = PBXBuildFile; fileRef = 220B93367173190E0C89D8F5 /* TestOfflineToneGeneration.m */; };
 		C9D164A01647B2DD007AC9B4 /* TestOfflineFFTComputation.m in Sources */ = {isa = PBXBuildFile; fileRef = 220B9121D006B8285FB573C9 /* TestOfflineFFTComputation.m */; };
 		C9D164A11647B2E0007AC9B4 /* TestOfflineFFTComputationAsync.m in Sources */ = {isa = PBXBuildFile; fileRef = 220B960588E98A4A15F5C08F /* TestOfflineFFTComputationAsync.m */; };
+		C9E2EB2E164BB3F7007C41BA /* TestOnlineToneGenerationFromURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 220B98ED945DE7341FD09927 /* TestOnlineToneGenerationFromURL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -496,6 +497,7 @@
 				C9D1649F1647B2DA007AC9B4 /* TestOfflineToneGeneration.m in Sources */,
 				C9D164A01647B2DD007AC9B4 /* TestOfflineFFTComputation.m in Sources */,
 				C9D164A11647B2E0007AC9B4 /* TestOfflineFFTComputationAsync.m in Sources */,
+				C9E2EB2E164BB3F7007C41BA /* TestOnlineToneGenerationFromURL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
